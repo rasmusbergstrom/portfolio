@@ -528,6 +528,54 @@ section.success a input {
       flex-wrap: wrap;
 }
 
+.aboutme-container .aboutme-content.continued-article {
+  padding: .8rem;
+}
+
+.aboutme-container .aboutme-content.continued-article figure {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  background-color: white;
+  height: 120px;
+  border: 2px solid black;
+  margin-top: .5rem;
+}
+
+.aboutme-container .aboutme-content.continued-article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.aboutme-container .aboutme-content.continued-article .archivements-bar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border: 2px solid black;
+  padding: .5rem;
+  font-size: 14px;
+}
+
+.aboutme-container .aboutme-content.continued-article .archivements-bar h4 {
+  font-weight: 400;
+  padding: .3rem 0;
+}
+
+.aboutme-container .aboutme-content figure {
+  margin-top: 4.5rem;
+  margin-right: .2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+}
+
+.aboutme-container .aboutme-content figure img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+}
+
 .aboutme-container .aboutme-content div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 57%;
