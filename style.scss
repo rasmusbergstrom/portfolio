@@ -347,3 +347,47 @@ section{
         }
     }
 }
+.aboutme-content{
+    background-color: white;
+    border: $standard-shadow;
+    margin: 1.5rem;
+    padding: .4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    figure{
+        margin-top: 4.5rem;
+        margin-right: .2rem;
+        flex: 0 0 35%;
+        img{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 100%;
+        }
+    }
+    div{
+        flex: 0 0 57%;
+        padding: 1rem .3rem;
+        margin: 0 .2rem;
+        h2{      
+            font-weight: 500;
+        }
+        p{    
+            padding: 1rem 0rem;   
+        }
+    }
+    .aboutme-button-bar{
+        flex: 1;
+        margin: 0px;
+        div{ 
+            display: flex;
+            justify-content: end;
+            a{
+                text-decoration: none;
+                color: $primary-text-color;
+            }
+            span{
+                font-size: 27px;
+            }
+        }
+    }
+}
