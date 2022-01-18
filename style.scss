@@ -235,6 +235,8 @@ section{
         }
     }
 }
+
+//HEADER & MENU
 .home-header{
     background-color: $second-color;
     padding: 1rem 0;
@@ -278,6 +280,68 @@ section{
                 }
                 &:last-child{
                     margin-bottom: 0;
+                }
+            }
+            &.exit{
+                .line{
+                    &:first-child{
+                        transform: rotate(45deg) translate(6px, 0px);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:last-child{
+                        transform: rotate(-45deg) translate(5px, 0px);
+                    }
+                }
+            }
+        }
+        .header-mob-menu{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 100vw;
+            right: -100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            //padding: 5rem;
+            border: $standard-shadow;
+            opacity: 0;
+            visibility: hidden;
+            transition: .2s ease-out;
+            &.active{
+                visibility: visible;
+                opacity: 1;
+                right:0;
+                left: 40vw;
+            }
+            .menu-list{
+                display: flex;
+                list-style: none;
+                //flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                flex: 1;
+                .menu-item{
+                    padding-bottom: 1rem;
+                    border-bottom: solid 2px black;
+                    flex: 0 0 100%;
+                    padding: 1rem 0;
+                    
+                    &:first-child{
+                        border-top: solid 2px black;
+                    }
+                    .menu-link{
+                        color: black;
+                        text-align: center;
+                        text-decoration: none;
+                        h4{
+                            font-weight: 400;              
+                        }
+                    }         
                 }
             }
         }
