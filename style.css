@@ -506,6 +506,13 @@ section.success a input {
   margin: 10rem 1.5rem;
 }
 
+@media (min-width: 568px) {
+  .aboutme-container {
+    margin: 10rem auto;
+    max-width: 600px;
+  }
+}
+
 .aboutme-container .aboutme-content {
   background-color: white;
   border: 2px solid black;
@@ -519,6 +526,40 @@ section.success a input {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.aboutme-container .aboutme-content.continued-article {
+  padding: .8rem;
+}
+
+.aboutme-container .aboutme-content.continued-article figure {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  background-color: white;
+  height: 120px;
+  border: 2px solid black;
+  margin-top: .5rem;
+}
+
+.aboutme-container .aboutme-content.continued-article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.aboutme-container .aboutme-content.continued-article .archivements-bar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border: 2px solid black;
+  padding: .5rem;
+  font-size: 14px;
+}
+
+.aboutme-container .aboutme-content.continued-article .archivements-bar h4 {
+  font-weight: 400;
+  padding: .3rem 0;
 }
 
 .aboutme-container .aboutme-content figure {

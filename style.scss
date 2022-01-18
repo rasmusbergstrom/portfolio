@@ -348,6 +348,10 @@ section{
 }
 .aboutme-container{
    margin: 10rem 1.5rem;
+   @media (min-width: 568px) {
+       margin: 10rem auto;
+       max-width: 600px;
+   }
     .aboutme-content{
         background-color: white;
         border: $standard-shadow;
@@ -356,6 +360,32 @@ section{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        &.continued-article{
+            padding: .8rem;
+            figure{
+                //FIX THIS LATER, REMOVE WHEN IMAGES IS DONE
+                flex: 0 0 100%;
+                background-color: white;
+                height: 120px;
+                border: $standard-shadow;   
+                margin-top: .5rem;        
+            }
+            div{
+                flex: 0 0 100%;
+            }
+            .archivements-bar{
+                flex: 0 0 100%;
+                border: $standard-shadow;
+                padding: .5rem;
+                font-size: 14px;
+                h4{
+                    font-weight: 400;
+                    //border-bottom: solid .5px lightslategrey;
+                    padding: .3rem 0;
+                    
+                }
+            }
+        }
         figure{
             margin-top: 4.5rem;
             margin-right: .2rem;
