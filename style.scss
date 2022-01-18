@@ -17,8 +17,7 @@ body{
 }
 section{
     max-width: 600px;
-    margin: 10rem auto;
-    background-color: #8CC0C7; 
+    margin: 10rem auto; 
     //ERROR-DIV
     .error-div{
         margin: 10rem 1rem;
@@ -347,47 +346,65 @@ section{
         }
     }
 }
-.aboutme-content{
-    background-color: white;
-    border: $standard-shadow;
-    margin: 1.5rem;
-    padding: .4rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    figure{
-        margin-top: 4.5rem;
-        margin-right: .2rem;
-        flex: 0 0 35%;
-        img{
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            width: 100%;
+.aboutme-container{
+   margin: 10rem 1.5rem;
+    .aboutme-content{
+        background-color: white;
+        border: $standard-shadow;
+        border-bottom: $bottom-shadow;
+        padding: .4rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        figure{
+            margin-top: 4.5rem;
+            margin-right: .2rem;
+            flex: 0 0 35%;
+            img{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                width: 100%;
+            }
+        }
+        div{
+            flex: 0 0 57%;
+            padding: 1rem .3rem;
+            margin: 0 .2rem;
+            h2{      
+                font-weight: 500;
+            }
+            p{    
+                padding: 1rem 0rem;   
+            }
+        }
+        .aboutme-button-bar{
+            flex: 1;
+            margin: 0px;
+            div{ 
+                display: flex;
+                justify-content: end;
+                a{
+                    text-decoration: none;
+                    color: $primary-text-color;
+                }
+                span{
+                    font-size: 27px;
+                }
+            }
         }
     }
-    div{
-        flex: 0 0 57%;
-        padding: 1rem .3rem;
-        margin: 0 .2rem;
-        h2{      
-            font-weight: 500;
-        }
-        p{    
-            padding: 1rem 0rem;   
-        }
-    }
-    .aboutme-button-bar{
-        flex: 1;
-        margin: 0px;
-        div{ 
-            display: flex;
-            justify-content: end;
+    .button-section{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: end;
+        .back-button{
+            background-color: $main-color;
+            border: $standard-shadow;
+            padding: .2rem .5rem;
             a{
                 text-decoration: none;
-                color: $primary-text-color;
-            }
-            span{
-                font-size: 27px;
+                color: black
             }
         }
     }
 }
+
