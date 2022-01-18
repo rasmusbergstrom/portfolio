@@ -156,7 +156,6 @@ section{
                flex: 0 0 30%;
         }
            .portfolio-header{
-               background-color: yellow;
                flex: 0 0 100%;
                display: flex; 
                 .portfolio-label{
@@ -202,8 +201,7 @@ section{
         align-items: center;
         justify-content: center;
         article{
-            padding: 1rem 2rem;
-            background-color: #FBFF31;
+            padding: 1rem 2rem;           
             border: $standard-shadow;
             border-bottom: $bottom-shadow;
             flex: 0 0 100%;
@@ -239,41 +237,49 @@ section{
 }
 .home-header{
     background-color: $second-color;
-    max-width: 100vw;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     border-bottom: solid 3px black;
-
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    top: 0;
     .head-content{
-        margin: auto;
+        padding: 0 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1000px;
+        @media (min-width: 768px){
+            max-width: 1000px;
+            margin: auto;
+        }
         .header-title{
             font-size: 13px;
             h2{
                 font-weight: 450;
             }
         }
-        .header-menu{
-             height: 25px;
-             width: 40px;
-             position: relative;
-             .hamburger-icon{
-                position: absolute;
-                width: 40px;
-                height: 4px;
+        .hamburger{    
+            cursor: pointer;
+            z-index: 21;
+            @media (min-width:768px) {
+                display: none;
+            }
+            .line{
+                display: block;
                 background-color: black;
-                &#one{
-                    top: 0px;
+                width: 25px;
+                height: 3px;
+                margin: 5px 0;
+                border-radius: 20px;
+                transition: .2s;
+                &:first-child{
+                    margin-top: 0;
                 }
-                &#two{
-                    top: 10px;
+                &:last-child{
+                    margin-bottom: 0;
                 }
-                &#three{
-                    bottom: 1px;
-                }
-             }
+            }
         }
     }
 }
