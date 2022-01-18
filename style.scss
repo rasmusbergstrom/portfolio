@@ -360,15 +360,7 @@ section{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        figure{
-            margin-top: 4.5rem;
-            margin-right: .2rem;
-            flex: 0 0 35%;
-            img{
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                width: 100%;
-            }
-        }
+        
         div{
             flex: 0 0 57%;
             padding: 1rem .3rem;

@@ -528,20 +528,6 @@ section.success a input {
       flex-wrap: wrap;
 }
 
-.aboutme-container .aboutme-content figure {
-  margin-top: 4.5rem;
-  margin-right: .2rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 35%;
-          flex: 0 0 35%;
-}
-
-.aboutme-container .aboutme-content figure img {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 100%;
-}
-
 .aboutme-container .aboutme-content div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 57%;
