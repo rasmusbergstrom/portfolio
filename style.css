@@ -506,6 +506,13 @@ section.success a input {
   margin: 10rem 1.5rem;
 }
 
+@media (min-width: 568px) {
+  .aboutme-container {
+    margin: 10rem auto;
+    max-width: 600px;
+  }
+}
+
 .aboutme-container .aboutme-content {
   background-color: white;
   border: 2px solid black;

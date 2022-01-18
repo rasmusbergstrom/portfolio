@@ -348,6 +348,10 @@ section{
 }
 .aboutme-container{
    margin: 10rem 1.5rem;
+   @media (min-width: 568px) {
+       margin: 10rem auto;
+       max-width: 600px;
+   }
     .aboutme-content{
         background-color: white;
         border: $standard-shadow;
