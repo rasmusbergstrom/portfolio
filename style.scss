@@ -296,7 +296,6 @@ section{
             }
         }
         .header-mob-menu{
-            background-color: white;
             position: fixed;
             top: 0;
             bottom: 0;
@@ -306,11 +305,19 @@ section{
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            //padding: 5rem;
             border: $standard-shadow;
             opacity: 0;
             visibility: hidden;
             transition: .2s ease-out;
+            background-color: white;
+            @media (min-width: 768px) {
+                flex: 0 0 40%;
+                visibility: visible;
+                position: static;
+                opacity: 1;
+                border: none;  
+                background-color: transparent;      
+            }
             &.active{
                 visibility: visible;
                 opacity: 1;
@@ -318,28 +325,36 @@ section{
                 left: 40vw;
             }
             .menu-list{
-                display: flex;
                 list-style: none;
-                //flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
                 flex: 1;
+                @media (min-width: 768px) {
+                    flex-direction: row;
+                    align-items: center;
+                }
                 .menu-item{
                     padding-bottom: 1rem;
                     border-bottom: solid 2px black;
                     flex: 0 0 100%;
                     padding: 1rem 0;
-                    
+                    text-align: center;
+                    @media (min-width: 768px) {
+                        border-bottom: none;
+                        flex: 0 0 25%;
+                    }
                     &:first-child{
                         border-top: solid 2px black;
+                        @media (min-width: 768px) {
+                            border-top: none;
+                        }
                     }
                     .menu-link{
                         color: black;
-                        text-align: center;
                         text-decoration: none;
-                        h4{
-                            font-weight: 400;              
-                        }
+                        
                     }         
                 }
             }
