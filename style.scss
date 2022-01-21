@@ -2,8 +2,12 @@ $main-color: #FAFF09;
 $second-color: #45D174;
 $background-color: #8CC0C7;
 $primary-text-color: black;
-$standard-shadow: 2px solid black;
-$bottom-shadow: 5px solid black;
+$border-color: black;
+$standard-shadow: 2px solid $border-color;
+$bottom-shadow: 5px solid $border-color;
+$max-width: 1100px;
+$font: 'Poppins';
+$fontWeight500: 500;
 
 *, html{ 
     padding: 0;
@@ -12,12 +16,92 @@ $bottom-shadow: 5px solid black;
     font-family: "Poppins";
 }
 body{
-    background-color: #8CC0C7;
-    font-family: "Poppins";
+    background-color: $background-color;
+    font-family: $font;
 }
-section{
+a{
+    color: $primary-text-color;
+    text-decoration: none;
+}
+p{
+    font-weight: $fontWeight500;
+}
+.welcome-section{
+    margin-top: 15%;
+    padding: 2rem;
+    @media (min-width: 780px) {
+        margin-top: 10%;
+        flex: 1;  
+    }
+    .welcome-box{
+        margin: auto;
+        max-width: 400px;
+        background-color: $main-color;
+        border: $standard-shadow;
+        border-bottom: $bottom-shadow;
+        padding: 1.5rem 1.5rem;
+        @media (min-width: 780px) {
+            margin-top: 0%;
+            flex: 1;  
+        }
+    }
+}
+.container{
     max-width: 600px;
-    margin: 10rem auto; 
+    margin: auto;    
+    padding: 2rem;  
+    @media (min-width: 568px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $max-width;
+    }
+    .portfolio-div{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        @media (min-width: 780px) {
+            flex: 0 0 45.8%;
+        }
+        @media (min-width: 960px) {
+            flex: 0 0 30%;
+    }
+        .portfolio-header{
+            flex: 0 0 100%;
+            display: flex; 
+             .portfolio-label{
+                 padding: .3rem .6rem;
+                 background-color: $primary-text-color;
+                 h4{
+                     color: white;
+                 }
+             }
+             .portfolio-button{          
+                 margin-left: auto;  
+                 .port-btn{              
+                     padding: .3rem 0;
+                     display: flex;
+                     align-items: center;
+                     background-color: transparent;
+                     border: none;
+                     h4{
+                         font-weight: $fontWeight500;
+                         padding-right: .3rem;
+                     }
+                 }
+             }
+        }
+        .portfolio-content{
+            border: $standard-shadow;
+            border-bottom: $bottom-shadow;
+            padding: 2rem 1rem;
+            background-color: white;
+            h4{
+                margin-bottom: .3rem;
+            }
+        }
+    }
     //ERROR-DIV
     .error-div{
         margin: 10rem 1rem;
@@ -28,7 +112,7 @@ section{
             .error-label{
                 padding: .2rem 1.5rem;
                 background-color: yellow;
-                border: solid 2px black;
+                border: solid 2px $primary-text-color;
                 border-bottom: none;
             }
         }
@@ -65,7 +149,7 @@ section{
             justify-content: center;
             padding-bottom: .2rem;
             h3{
-                text-shadow: 2px .5px 2px black;  
+                text-shadow: 2px .5px 2px $border-color;  
                 color: red;     
             }
         }
@@ -111,85 +195,6 @@ section{
                 }
             }
         }
-    }
-    
-    &.home-container{
-        margin: auto;
-        
-        @media (min-width: 780px) {
-               display: flex;
-               flex-wrap: wrap;
-               align-items: center;
-               justify-content: center;
-               max-width: 780px;
-        }
-        @media (min-width: 780px) {
-            max-width: 1010px;
-     }
-       .welcome-box{
-           background-color: $main-color;
-           border: solid 3px black;
-           border-bottom: solid 7px black;
-           margin: 1rem;
-           padding: 1.5rem 1.5rem;
-           margin-top: 5rem;
-           margin-bottom: 5rem;
-           p{
-            font-weight: 500;
-           }
-           @media (min-width: 780px) {
-               margin: 5rem 10rem;
-               padding: 2rem 2rem;
-        }
-       }
-       .portfolio-div{
-           margin: 1rem;
-           display: flex;
-           flex-wrap: wrap;
-           margin-bottom: 2rem;
-           justify-content: space-between;
-           @media (min-width: 780px) {
-               flex: 0 0 45.8%;
-           }
-           @media (min-width: 960px) {
-               flex: 0 0 30%;
-        }
-           .portfolio-header{
-               flex: 0 0 100%;
-               display: flex; 
-                .portfolio-label{
-                    padding: .3rem .6rem;
-                    background-color: $primary-text-color;
-                    h4{
-                        color: white;
-                    }
-                }
-                .portfolio-button{          
-                    margin-left: auto;  
-                    .port-btn{              
-                        padding: .3rem 0;
-                        display: flex;
-                        align-items: center;
-                        font-family: "Poppins";
-                        background-color: transparent;
-                        border: none;
-                        h4{
-                            font-weight: 450;
-                            padding-right: .3rem;
-                        }
-                    }
-                }
-           }
-           .portfolio-content{
-               border: solid 3px black;
-               border-bottom: solid 7px black;
-               padding: 2rem 1rem;
-               background-color: white;
-               h4{
-                   margin-bottom: .3rem;
-               }
-           }
-       }
     }
     &.success{
         margin: 20rem auto;
