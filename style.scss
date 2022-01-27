@@ -2,6 +2,7 @@ $main-color: #FAFF09;
 $second-color: #45D174;
 $background-color: #8CC0C7;
 $primary-text-color: black;
+$seconday-content-color: white;
 $border-color: black;
 $standard-shadow: 2px solid $border-color;
 $bottom-shadow: 5px solid $border-color;
@@ -262,7 +263,7 @@ p{
         .header-title{
             font-size: 13px;
             h2{
-                font-weight: 450;
+                font-weight: $fontWeight500;
             }
         }
         .hamburger{    
@@ -314,7 +315,7 @@ p{
             opacity: 0;
             visibility: hidden;
             transition: .2s ease-out;
-            background-color: white;
+            background-color: $seconday-content-color;
             @media (min-width: 768px) {
                 flex: 0 0 40%;
                 visibility: visible;
@@ -373,7 +374,7 @@ p{
        max-width: 600px;
    }
     .aboutme-content{
-        background-color: white;
+        background-color: $seconday-content-color;
         border: $standard-shadow;
         border-bottom: $bottom-shadow;
         padding: .4rem;
@@ -400,9 +401,7 @@ p{
                 font-size: 14px;
                 h4{
                     font-weight: 400;
-                    //border-bottom: solid .5px lightslategrey;
-                    padding: .3rem 0;
-                    
+                    padding: .3rem 0;                  
                 }
             }
         }
@@ -450,10 +449,6 @@ p{
             background-color: $main-color;
             border: $standard-shadow;
             padding: .2rem .5rem;
-            a{
-                text-decoration: none;
-                color: black
-            }
         }
     }
 }

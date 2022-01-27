@@ -391,7 +391,7 @@ p {
 }
 
 .home-header .head-content .header-title h2 {
-  font-weight: 450;
+  font-weight: 500;
 }
 
 .home-header .head-content .hamburger {
@@ -678,10 +678,5 @@ p {
   background-color: #FAFF09;
   border: 2px solid black;
   padding: .2rem .5rem;
-}
-
-.aboutme-container .button-section .back-button a {
-  text-decoration: none;
-  color: black;
 }
 /*# sourceMappingURL=style.css.map */
