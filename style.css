@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #8CC0C7;
+  background-color: #DEE2E6;
   font-family: "Poppins";
 }
 
@@ -37,7 +37,7 @@ p {
 .welcome-section .welcome-box {
   margin: auto;
   max-width: 400px;
-  background-color: #FAFF09;
+  background-color: #F9C74F;
   border: 2px solid black;
   border-bottom: 5px solid black;
   padding: 1.5rem 1.5rem;
@@ -194,7 +194,7 @@ p {
 .container .error-div .error-content .back-btn {
   font-weight: 400;
   margin-top: 2rem;
-  background-color: #45D174;
+  background-color: #76C893;
   color: black;
   border: 2px solid black;
   text-decoration: none;
@@ -241,7 +241,7 @@ p {
 }
 
 .container form div label {
-  background-color: #FAFF09;
+  background-color: #F9C74F;
   border: 2px solid black;
   padding: .2rem 1.5rem;
   border-bottom: none;
@@ -285,7 +285,7 @@ p {
   font-size: 18px;
   -ms-grid-column-align: center;
       justify-self: center;
-  background-color: #45D174;
+  background-color: #76C893;
 }
 
 .container.success {
@@ -341,7 +341,7 @@ p {
 
 .container.success a input {
   margin-top: 50px;
-  background-color: #45D174;
+  background-color: #76C893;
   padding: .5rem 2rem;
   border: 2px solid black;
   border-bottom: 5px solid black;
@@ -356,7 +356,7 @@ p {
 }
 
 .home-header {
-  background-color: #45D174;
+  background-color: #76C893;
   padding: 1rem 0;
   border-bottom: solid 3px black;
   position: fixed;
@@ -460,7 +460,7 @@ p {
   visibility: hidden;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -561,7 +561,7 @@ p {
 }
 
 .aboutme-container .aboutme-content {
-  background-color: white;
+  background-color: #FFFFFF;
   border: 2px solid black;
   border-bottom: 5px solid black;
   padding: .4rem;
@@ -675,7 +675,144 @@ p {
 }
 
 .aboutme-container .button-section .back-button {
-  background-color: #FAFF09;
+  background-color: #F9C74F;
+  border: 2px solid black;
+  padding: .2rem .5rem;
+}
+
+.global-section {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+@media (min-width: 568px) {
+  .global-section {
+    margin: auto;
+    max-width: 568px;
+    padding: 3rem;
+  }
+}
+
+.global-section.p-15 {
+  padding-top: 15rem;
+}
+
+.global-section .card-content {
+  background-color: #FFFFFF;
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+  padding: .4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.global-section .card-content.continued-article {
+  padding: .8rem;
+}
+
+.global-section .card-content.continued-article figure {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  background-color: white;
+  height: 120px;
+  border: 2px solid black;
+  margin-top: .5rem;
+}
+
+.global-section .card-content.continued-article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.global-section .card-content.continued-article .archivements-bar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border: 2px solid black;
+  padding: .5rem;
+  font-size: 14px;
+}
+
+.global-section .card-content.continued-article .archivements-bar h4 {
+  font-weight: 400;
+  padding: .3rem 0;
+}
+
+.global-section .card-content figure {
+  margin-top: 4.5rem;
+  margin-right: .2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+}
+
+.global-section .card-content figure img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+}
+
+.global-section .card-content div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 57%;
+          flex: 0 0 57%;
+  padding: 1rem .3rem;
+  margin: 0 .2rem;
+}
+
+.global-section .card-content div h2 {
+  font-weight: 500;
+}
+
+.global-section .card-content div p {
+  padding: 1rem 0rem;
+}
+
+.global-section .card-content .aboutme-button-bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0px;
+}
+
+.global-section .card-content .aboutme-button-bar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.global-section .card-content .aboutme-button-bar div a {
+  text-decoration: none;
+  color: black;
+}
+
+.global-section .card-content .aboutme-button-bar div span {
+  font-size: 27px;
+}
+
+.global-section .button-section {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.global-section .button-section .back-button {
+  background-color: #F9C74F;
   border: 2px solid black;
   padding: .2rem .5rem;
 }
