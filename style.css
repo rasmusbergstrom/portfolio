@@ -155,6 +155,10 @@ p {
   margin-bottom: .3rem;
 }
 
+.container .portfolio-div .portfolio-content p {
+  font-weight: 400;
+}
+
 .container .error-div {
   margin: 10rem 1rem;
   padding: 1.5rem 1.5rem;
