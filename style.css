@@ -56,6 +56,7 @@ p {
   max-width: 600px;
   margin: auto;
   padding: 2rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 568px) {
@@ -73,6 +74,41 @@ p {
             justify-content: space-between;
     max-width: 1100px;
   }
+}
+
+.container .category-menu {
+  margin: 2rem 0;
+}
+
+.container .category-menu .categorys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.container .category-menu .categorys li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  background-color: #F9C74F;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.container .category-menu .categorys li a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 500;
+  padding: .5rem;
 }
 
 .container .portfolio-div {
