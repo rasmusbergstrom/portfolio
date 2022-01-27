@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #8CC0C7;
+  background-color: #DEE2E6;
   font-family: "Poppins";
 }
 
@@ -37,7 +37,7 @@ p {
 .welcome-section .welcome-box {
   margin: auto;
   max-width: 400px;
-  background-color: #FAFF09;
+  background-color: #F9C74F;
   border: 2px solid black;
   border-bottom: 5px solid black;
   padding: 1.5rem 1.5rem;
@@ -194,7 +194,7 @@ p {
 .container .error-div .error-content .back-btn {
   font-weight: 400;
   margin-top: 2rem;
-  background-color: #45D174;
+  background-color: #76C893;
   color: black;
   border: 2px solid black;
   text-decoration: none;
@@ -241,7 +241,7 @@ p {
 }
 
 .container form div label {
-  background-color: #FAFF09;
+  background-color: #F9C74F;
   border: 2px solid black;
   padding: .2rem 1.5rem;
   border-bottom: none;
@@ -285,7 +285,7 @@ p {
   font-size: 18px;
   -ms-grid-column-align: center;
       justify-self: center;
-  background-color: #45D174;
+  background-color: #76C893;
 }
 
 .container.success {
@@ -341,7 +341,7 @@ p {
 
 .container.success a input {
   margin-top: 50px;
-  background-color: #45D174;
+  background-color: #76C893;
   padding: .5rem 2rem;
   border: 2px solid black;
   border-bottom: 5px solid black;
@@ -356,7 +356,7 @@ p {
 }
 
 .home-header {
-  background-color: #45D174;
+  background-color: #76C893;
   padding: 1rem 0;
   border-bottom: solid 3px black;
   position: fixed;
@@ -675,7 +675,7 @@ p {
 }
 
 .aboutme-container .button-section .back-button {
-  background-color: #FAFF09;
+  background-color: #F9C74F;
   border: 2px solid black;
   padding: .2rem .5rem;
 }
@@ -812,7 +812,7 @@ p {
 }
 
 .global-section .button-section .back-button {
-  background-color: #FAFF09;
+  background-color: #F9C74F;
   border: 2px solid black;
   padding: .2rem .5rem;
 }
