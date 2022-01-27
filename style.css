@@ -694,4 +694,25 @@ p {
   border: 2px solid black;
   padding: .2rem .5rem;
 }
+
+footer {
+  background-color: transparent;
+  padding: 2rem;
+}
+
+footer .footer-container {
+  margin: auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-container h5 {
+  color: black;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */

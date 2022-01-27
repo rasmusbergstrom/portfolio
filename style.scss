@@ -464,5 +464,19 @@ p{
         }
     }
 }
-//
+//Footer 
+footer{
+    background-color: transparent;
+    padding:2rem;
+    .footer-container{
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        h5{
+            color:$primary-text-color;
+            font-weight:400;
+        }
+    }
+}
 
