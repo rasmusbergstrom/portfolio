@@ -265,6 +265,12 @@ p {
   top: 0;
 }
 
+@media (min-width: 768px) {
+  .home-header {
+    padding: 0rem 1rem;
+  }
+}
+
 .home-header .head-content {
   padding: 0 1rem;
   display: -webkit-box;
