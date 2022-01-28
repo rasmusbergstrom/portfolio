@@ -4,6 +4,7 @@ $background-color: #DEE2E6;
 $primary-text-color: black;
 $seconday-content-color: #FFFFFF;
 $border-color: black;
+$hover-color: darkorange;
 $standard-shadow: 2px solid $border-color;
 $bottom-shadow: 5px solid $border-color;
 $max-width: 1100px;
@@ -28,7 +29,7 @@ a{
 p{
     font-weight: $fontWeight500;
 }
-.welcome-section{
+.start-section{
     margin-top: 15%;
     padding: 2rem;
     @media (min-width: 780px) {
@@ -47,9 +48,38 @@ p{
             flex: 1;  
         }
     }
+    .category-menu{
+        margin: auto;
+        max-width: 400px;
+        .categorys{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;   
+            li{
+                flex: 0 0 23%;
+                background-color: $main-color;
+                border: $standard-shadow;
+                margin-bottom: 5px;
+                margin-left: 10px;
+                display: flex;
+                text-align: center;
+                a{
+                    flex: 1;
+                    font-weight: $fontWeight500;
+                    padding: .5rem 
+                }
+                &:hover{
+                    background-color: $hover-color;
+                }
+                &.selected-category{
+                    background-color: $hover-color;
+                }
+            }
+        }
+    }
 }
 // Portfolio content
-.container{
+.portfolio-section{
     max-width: 600px;
     margin: auto;    
     padding: 2rem;  
@@ -60,6 +90,8 @@ p{
         justify-content: space-between;
         max-width: $max-width;
     }
+    //category menu
+    
     .portfolio-div{
         display: flex;
         flex-wrap: wrap;
@@ -146,105 +178,6 @@ p{
             }
         }
     }
-    form{
-        padding: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .error-label{     
-            display: flex;
-            justify-content: center;
-            padding-bottom: .2rem;
-            h3{
-                text-shadow: 2px .5px 2px $border-color;  
-                color: red;     
-            }
-        }
-        div{
-            flex: 0 0 100%;
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 1rem;     
-            label{
-                background-color: $main-color;
-                border: $standard-shadow;
-                padding: .2rem 1.5rem;
-                border-bottom: none;
-                font-weight: 550;
-                font-size: 18px;
-            }
-            input{
-                flex: 0 0 100%;
-                padding: 1rem;
-                border: $standard-shadow;
-                border-bottom: $bottom-shadow;
-            }
-            &#info{
-                display: flex;
-                flex-wrap: wrap;
-                label{
-                    padding: .2rem .2rem;
-                }
-                textarea{
-                    resize: none;
-                    flex: 0 0 100%;
-                    border: $standard-shadow;
-                    border-bottom: $bottom-shadow;
-                    padding: 10px;
-                }
-            }
-            &#submit{
-                input{
-                    font-weight: 550;
-                    font-size: 18px;
-                    justify-self: center;
-                    background-color: $second-color;
-                }
-            }
-        }
-    }
-    &.success{
-        margin: 20rem auto;
-        padding: 1rem 2rem;
-        max-width: 600px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        article{
-            padding: 1rem 2rem;           
-            border: $standard-shadow;
-            border-bottom: $bottom-shadow;
-            flex: 0 0 100%;
-            p{
-                font-weight: 550;
-                font-size: 18px;
-                @media (min-width: 950px) {
-                    font-size: 24px;
-                }
-            }
-            @media (min-width: 568px) {
-                flex: 0 0 80%;
-            }
-            @media (min-width: 950px) {
-                padding: 2rem 5rem;
-            }
-        }
-        a{
-            input{
-                margin-top: 50px;  
-                background-color: $second-color;
-                padding: .5rem 2rem;
-                border:$standard-shadow;
-                border-bottom: $bottom-shadow;
-                font-weight: 550;
-                font-size: 17px;
-                @media (min-width: 950px) {
-                    font-size: 24px;
-                }
-            }
-        }
-    }
 }
 
 //HEADER & MENU
@@ -257,6 +190,9 @@ p{
     left: 0;
     right: 0;
     top: 0;
+    @media (min-width: 768px){
+        padding: 0rem 1rem;
+    }
     .head-content{
         padding: 0 1rem;
         display: flex;
@@ -465,6 +401,9 @@ p{
             background-color: $main-color;
             border: $standard-shadow;
             padding: .2rem .5rem;
+        }
+        :hover{
+            background-color: $hover-color;
         }
     }
 }
