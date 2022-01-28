@@ -56,7 +56,7 @@ p {
   max-width: 600px;
   margin: auto;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 568px) {
@@ -77,7 +77,8 @@ p {
 }
 
 .container .category-menu {
-  margin: 2rem 0;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .container .category-menu .categorys {
@@ -109,6 +110,14 @@ p {
           flex: 1;
   font-weight: 500;
   padding: .5rem;
+}
+
+.container .category-menu .categorys li:hover {
+  background-color: darkorange;
+}
+
+.container .category-menu .categorys li.selected-category {
+  background-color: darkorange;
 }
 
 .container .portfolio-div {

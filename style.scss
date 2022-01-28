@@ -4,6 +4,7 @@ $background-color: #DEE2E6;
 $primary-text-color: black;
 $seconday-content-color: #FFFFFF;
 $border-color: black;
+$hover-color: darkorange;
 $standard-shadow: 2px solid $border-color;
 $bottom-shadow: 5px solid $border-color;
 $max-width: 1100px;
@@ -53,7 +54,7 @@ p{
     max-width: 600px;
     margin: auto;    
     padding: 2rem;  
-    margin-top: 2rem;
+    margin-top: 3rem;
     @media (min-width: 568px) {
         display: flex;
         flex-wrap: wrap;
@@ -63,7 +64,8 @@ p{
     }
     //category menu
     .category-menu{
-        margin: 2rem 0;
+        margin: auto;
+        margin-bottom: 2rem;
         .categorys{
             display: flex;
             flex-wrap: wrap;
@@ -80,6 +82,12 @@ p{
                     flex: 1;
                     font-weight: $fontWeight500;
                     padding: .5rem 
+                }
+                &:hover{
+                    background-color: $hover-color;
+                }
+                &.selected-category{
+                    background-color: $hover-color;
                 }
             }
         }
