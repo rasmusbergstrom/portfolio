@@ -744,6 +744,10 @@ p {
   padding: .2rem .5rem;
 }
 
+.global-section .button-section :hover {
+  background-color: darkorange;
+}
+
 footer {
   background-color: transparent;
   padding: 2rem;

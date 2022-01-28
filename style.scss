@@ -498,6 +498,9 @@ p{
             border: $standard-shadow;
             padding: .2rem .5rem;
         }
+        :hover{
+            background-color: $hover-color;
+        }
     }
 }
 //Footer 
