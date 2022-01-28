@@ -27,10 +27,14 @@ p {
 
 @media (min-width: 780px) {
   .start-section {
-    margin-top: 10%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    margin: 15% auto;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 980px) {
+  .start-section {
+    margin: 7% auto;
   }
 }
 
