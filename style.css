@@ -304,10 +304,11 @@ p {
           align-items: center;
   background-color: transparent;
   border: none;
+  font-size: .9rem;
 }
 
-.portfolio-section .portfolio-div .portfolio-header .portfolio-button .port-btn h4 {
-  font-weight: 500;
+.portfolio-section .portfolio-div .portfolio-header .portfolio-button .port-btn a {
+  font-weight: 400;
   padding-right: .3rem;
 }
 

@@ -197,8 +197,9 @@ p{
                      align-items: center;
                      background-color: transparent;
                      border: none;
-                     h4{
-                         font-weight: $fontWeight500;
+                     font-size: .9rem;
+                     a{
+                         font-weight: $fontWeight400;
                          padding-right: .3rem;
                      }
                  }
