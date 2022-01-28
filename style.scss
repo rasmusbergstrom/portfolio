@@ -33,9 +33,84 @@ p{
     margin-top: 15%;
     padding: 2rem;
     @media (min-width: 780px) {
-        margin-top: 10%;
-        flex: 1;  
+        margin: 15% auto;
+        max-width: 700px; 
     }
+    @media (min-width: 980px) {
+        margin: 10% auto;
+    }
+    .single-portfolio-card{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+           .portfolio-header{
+                flex: 0 0 100%;
+                display: flex; 
+                @media (min-width: 568px) {
+                    justify-content: center;
+                }
+                 .portfolio-label{
+                     padding: .3rem .6rem;
+                     background-color: $primary-text-color;
+                     color:$seconday-content-color;
+                 }
+                 .portfolio-button{          
+                     margin-left: auto;  
+                     .port-btn{              
+                         padding: .3rem 0;
+                         display: flex;
+                         align-items: center;
+                         background-color: transparent;
+                         border: none;
+                         h4{
+                             font-weight: $fontWeight500;
+                             padding-right: .3rem;
+                         }
+                     }
+                 }
+            }
+            .portfolio-content{
+                border: $standard-shadow;
+                border-bottom: $bottom-shadow;
+                padding: 2rem 1rem;
+                background-color: $seconday-content-color;
+                @media (min-width: 568px) {
+                    padding: 2.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .content-text{
+                    @media (min-width: 568px) {
+                        flex: 0 0 60%;
+                    }
+                    h4{
+                        margin-bottom: .3rem;
+                        font-size: 1.2rem;
+                        font-weight: $fontWeight500;
+                    }
+                    p{
+                        font-weight: $fontWeight400;
+                    }
+                }
+                .portfolio-img-container{
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: space-between;  
+                    @media (min-width: 568px) {
+                        flex: 0 0 35%;
+                        flex-flow: column;
+                    } 
+                    figure{              
+                        img{ 
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            border: solid 2px black;   
+                        }
+                    }
+                }
+            }
+        }
     .welcome-box{
         margin: auto;
         max-width: 400px;
@@ -78,6 +153,7 @@ p{
         }
     }
 }
+
 // Portfolio content
 .portfolio-section{
     max-width: 600px;
@@ -121,8 +197,9 @@ p{
                      align-items: center;
                      background-color: transparent;
                      border: none;
-                     h4{
-                         font-weight: $fontWeight500;
+                     font-size: .9rem;
+                     a{
+                         font-weight: $fontWeight400;
                          padding-right: .3rem;
                      }
                  }
@@ -334,14 +411,15 @@ p{
          justify-content: space-between;
          flex-wrap: wrap;
          &.alternative-article{
-             padding: .8rem;
+             padding: 1rem .8rem;
              figure{
-                 //FIX THIS LATER, REMOVE WHEN IMAGES IS DONE
-                 flex: 0 0 100%;
-                 background-color: $seconday-content-color;
-                 height: 120px;
-                 border: $standard-shadow;   
-                 margin-top: .5rem;        
+                margin-top: .5rem;
+                flex: 0 0 100%;
+                img{ 
+                    width: 100%;
+                    display: block;
+                    border: solid 2px black;   
+                }          
              }
              div{
                  flex: 0 0 100%;
