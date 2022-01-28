@@ -410,14 +410,15 @@ p{
          justify-content: space-between;
          flex-wrap: wrap;
          &.alternative-article{
-             padding: .8rem;
+             padding: 1rem .8rem;
              figure{
-                 //FIX THIS LATER, REMOVE WHEN IMAGES IS DONE
-                 flex: 0 0 100%;
-                 background-color: $seconday-content-color;
-                 height: 120px;
-                 border: $standard-shadow;   
-                 margin-top: .5rem;        
+                margin-top: .5rem;
+                flex: 0 0 100%;
+                img{ 
+                    width: 100%;
+                    display: block;
+                    border: solid 2px black;   
+                }          
              }
              div{
                  flex: 0 0 100%;
