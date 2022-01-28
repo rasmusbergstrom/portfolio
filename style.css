@@ -34,6 +34,90 @@ p {
   }
 }
 
+.start-section .single-portfolio-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 568px) {
+  .start-section .single-portfolio-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 49%;
+            flex: 0 0 49%;
+  }
+}
+
+@media (min-width: 780px) {
+  .start-section .single-portfolio-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.8%;
+            flex: 0 0 45.8%;
+  }
+}
+
+@media (min-width: 960px) {
+  .start-section .single-portfolio-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+}
+
+.start-section .single-portfolio-card .portfolio-header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start-section .single-portfolio-card .portfolio-header .portfolio-label {
+  padding: .3rem .6rem;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.start-section .single-portfolio-card .portfolio-header .portfolio-button {
+  margin-left: auto;
+}
+
+.start-section .single-portfolio-card .portfolio-header .portfolio-button .port-btn {
+  padding: .3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.start-section .single-portfolio-card .portfolio-header .portfolio-button .port-btn h4 {
+  font-weight: 500;
+  padding-right: .3rem;
+}
+
+.start-section .single-portfolio-card .portfolio-content {
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+  padding: 2rem 1rem;
+  background-color: #FFFFFF;
+}
+
+.start-section .single-portfolio-card .portfolio-content h4 {
+  margin-bottom: .3rem;
+}
+
+.start-section .single-portfolio-card .portfolio-content p {
+  font-weight: 400;
+}
+
 .start-section .welcome-box {
   margin: auto;
   max-width: 400px;

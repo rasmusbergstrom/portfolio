@@ -36,6 +36,55 @@ p{
         margin-top: 10%;
         flex: 1;  
     }
+    .single-portfolio-card{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            @media (min-width: 568px) {
+                flex: 0 0 49%;
+            }
+            @media (min-width: 780px) {
+                flex: 0 0 45.8%;
+            }
+            @media (min-width: 960px) {
+                flex: 0 0 30%;
+            }
+            .portfolio-header{
+                flex: 0 0 100%;
+                display: flex; 
+                 .portfolio-label{
+                     padding: .3rem .6rem;
+                     background-color: $primary-text-color;
+                     color:$seconday-content-color;
+                 }
+                 .portfolio-button{          
+                     margin-left: auto;  
+                     .port-btn{              
+                         padding: .3rem 0;
+                         display: flex;
+                         align-items: center;
+                         background-color: transparent;
+                         border: none;
+                         h4{
+                             font-weight: $fontWeight500;
+                             padding-right: .3rem;
+                         }
+                     }
+                 }
+            }
+            .portfolio-content{
+                border: $standard-shadow;
+                border-bottom: $bottom-shadow;
+                padding: 2rem 1rem;
+                background-color: $seconday-content-color;
+                h4{
+                    margin-bottom: .3rem;
+                }
+                p{
+                    font-weight: $fontWeight400;
+                }
+            }
+        }
     .welcome-box{
         margin: auto;
         max-width: 400px;
@@ -78,6 +127,7 @@ p{
         }
     }
 }
+
 // Portfolio content
 .portfolio-section{
     max-width: 600px;
