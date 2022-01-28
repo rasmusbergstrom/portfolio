@@ -37,22 +37,13 @@ p{
         max-width: 700px; 
     }
     @media (min-width: 980px) {
-        margin: 7% auto;
+        margin: 10% auto;
     }
     .single-portfolio-card{
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-            @media (min-width: 568px) {
-                flex: 0 0 49%;
-            }
-            @media (min-width: 780px) {
-                flex: 0 0 45.8%;
-            }
-            @media (min-width: 960px) {
-                flex: 0 0 30%;
-            }
-            .portfolio-header{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+           .portfolio-header{
                 flex: 0 0 100%;
                 display: flex; 
                 @media (min-width: 568px) {
@@ -83,19 +74,33 @@ p{
                 border-bottom: $bottom-shadow;
                 padding: 2rem 1rem;
                 background-color: $seconday-content-color;
-                h4{
-                    margin-bottom: .3rem;
-                    font-size: 1.2rem;
-                    font-weight: $fontWeight500;
+                @media (min-width: 568px) {
+                    padding: 2.5rem;
+                    display: flex;
+                    justify-content: space-between;
                 }
-                p{
-                    font-weight: $fontWeight400;
+                .content-text{
+                    @media (min-width: 568px) {
+                        flex: 0 0 60%;
+                    }
+                    h4{
+                        margin-bottom: .3rem;
+                        font-size: 1.2rem;
+                        font-weight: $fontWeight500;
+                    }
+                    p{
+                        font-weight: $fontWeight400;
+                    }
                 }
                 .portfolio-img-container{
                     margin-top: 1rem;
                     display: flex;
-                    justify-content: space-between;   
-                    figure{               
+                    justify-content: space-between;  
+                    @media (min-width: 568px) {
+                        flex: 0 0 35%;
+                        flex-flow: column;
+                    } 
+                    figure{              
                         img{ 
                             width: 100%;
                             height: 100%;
