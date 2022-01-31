@@ -295,7 +295,7 @@ p{
         }
         .header-title{
             font-size: 18px;
-            font-weight: $fontWeight4S00;
+            font-weight: $fontWeight400;
         }
         .hamburger{    
             cursor: pointer;
@@ -366,7 +366,7 @@ p{
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
-                justify-content: stretch;
+                justify-content: space-between;
                 flex: 1;
                 @media (min-width: 768px) {
                     flex-direction: row;
@@ -376,7 +376,7 @@ p{
                     padding-bottom: 1rem;
                     border-bottom: solid 2px black;
                     flex: 0 0 100%;
-                    padding: 1rem 0;
+                    padding: 1rem 1.5rem;
                     text-align: center;
                     @media (min-width: 768px) {
                         border-bottom: none;
