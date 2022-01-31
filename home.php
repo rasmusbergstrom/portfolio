@@ -85,11 +85,4 @@
             </article>
         </div>
     </section>
-    <footer>
-        <div class="footer-container">
-            <h5>Rasmus Bergström 2022</h5>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
