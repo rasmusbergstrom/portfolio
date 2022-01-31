@@ -22,6 +22,7 @@
         </li>
     </ul>
 </nav>
+</section>
 <section class="portfolio-section">
 <?php 
     if(have_posts()) : 
