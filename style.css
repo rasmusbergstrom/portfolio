@@ -233,7 +233,7 @@ p {
   background-color: darkorange;
 }
 
-.start-section .category-menu .categorys li.selected-category {
+.start-section .category-menu .categorys li.current-menu-item {
   background-color: darkorange;
 }
 
