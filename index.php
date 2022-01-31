@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 <section class="start-section">
 <nav class="category-menu">
-    <ul class="categorys">
+    <?php wp_nav_menu(array(
+        'theme_location' => 'categorymenu',
+        'menu_class' => 'categorys'
+    ));?>
+    <!-- <ul class="categorys">
         <li>
             <a href="/archive.html">Webb</a>
         </li>
@@ -20,7 +24,7 @@
         <li>
             <a href="/archive.html">UX</a>
         </li>
-    </ul>
+    </ul> -->
 </nav>
 </section>
 <section class="portfolio-section">
