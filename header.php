@@ -10,7 +10,7 @@
     <header class="home-header">
         <div class="head-content">
             <div class="header-title">
-                <h2>Rasmus Bergström</h2>
+                <a href="<?php echo home_url();?>"><?php bloginfo('name')?></a>
             </div>
             <div class="hamburger" id="js-navbar-toggle">
                 <span class="line"></span>

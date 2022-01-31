@@ -434,11 +434,8 @@ p {
 }
 
 .home-header .head-content .header-title {
-  font-size: 13px;
-}
-
-.home-header .head-content .header-title h2 {
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .home-header .head-content .hamburger {
