@@ -363,18 +363,18 @@ p{
                 right:0;
                 left: 40vw;
             }
-            .menu-list{
+            ul{
                 list-style: none;
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
-                justify-content: center;
+                justify-content: stretch;
                 flex: 1;
                 @media (min-width: 768px) {
                     flex-direction: row;
                     align-items: center;
                 }
-                .menu-item{
+                li{
                     padding-bottom: 1rem;
                     border-bottom: solid 2px black;
                     flex: 0 0 100%;
@@ -383,6 +383,7 @@ p{
                     @media (min-width: 768px) {
                         border-bottom: none;
                         flex: 0 0 25%;
+                        justify-content: space-between;
                     }
                     &:first-child{
                         border-top: solid 2px black;

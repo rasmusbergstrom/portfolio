@@ -10,5 +10,10 @@ add_action('wp_enqueue_scripts', 'get_style_script');
 
 function theme_setup() {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    register_nav_menus(array(
+        'mainmenu' => 'Main menu',
+        'categorymenu' => 'Category Menu'
+    ));
 }
 add_action('after_setup_theme', 'theme_setup');

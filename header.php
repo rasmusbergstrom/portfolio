@@ -18,28 +18,10 @@
                 <span class="line"></span>
             </div>
             <nav class="header-mob-menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="/home.html">
-                            Start
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="/index.html">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="/about-me.html">
-                            Om mig
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="/contactpage.html">
-                            Kontakt
-                        </a>
-                    </li>
-                </ul>
+                <?php wp_nav_menu(array(
+                    'theme_location' =>
+                    'mainmenu'
+                )); ?>
             </nav>
         </div>
 </header>
