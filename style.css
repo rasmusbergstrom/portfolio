@@ -19,6 +19,16 @@ body {
   font-family: "Poppins";
 }
 
+.logged-in .home-header {
+  top: 37px;
+}
+
+@media (min-width: 768px) {
+  .logged-in .home-header {
+    top: 32px;
+  }
+}
+
 a {
   color: black;
   text-decoration: none;

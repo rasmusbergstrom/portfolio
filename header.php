@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header class="home-header">
         <div class="head-content">
             <div class="header-title">

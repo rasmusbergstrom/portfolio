@@ -29,6 +29,13 @@ body{
     background-color: $background-color;
     font-family: $font;
 }
+//WP-admin style
+.logged-in .home-header{
+    top:37px;
+    @media (min-width: 768px) {
+        top:32px;
+    }
+}
 a{
     color: $primary-text-color;
     text-decoration: none;
