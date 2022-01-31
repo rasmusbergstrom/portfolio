@@ -4,27 +4,8 @@
     <?php wp_nav_menu(array(
         'theme_location' => 'categorymenu',
         'menu_class' => 'categorys'
-    ));?>
-    <!-- <ul class="categorys">
-        <li>
-            <a href="/archive.html">Webb</a>
-        </li>
-        <li>
-            <a href="/archive.html">JavaScript</a>
-        </li>
-        <li>
-            <a href="/archive.html">C#</a>
-        </li>
-        <li>
-            <a href="/archive.html">UI</a>
-        </li>
-        <li>
-            <a href="/archive.html">SCSS</a>
-        </li>
-        <li>
-            <a href="/archive.html">UX</a>
-        </li>
-    </ul> -->
+        ));
+    ?>
 </nav>
 </section>
 <section class="portfolio-section">
