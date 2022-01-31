@@ -7,3 +7,8 @@ function get_style_script(){
     wp_enqueue_script('main-js', get_theme_file_uri('script.js'), NULL, false, true);
 }
 add_action('wp_enqueue_scripts', 'get_style_script');
+
+function theme_setup() {
+    add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'theme_setup');
