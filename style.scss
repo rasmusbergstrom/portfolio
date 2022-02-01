@@ -53,9 +53,11 @@ p{
     border-bottom: $bottom-shadow;
     display: flex;
     align-items: center;
+    justify-content: center;
     .material-icons{
         font-weight: 600;
     }
+    
 }
 .text-button{          
     padding: .3rem 0;
@@ -507,6 +509,13 @@ p{
             background-color: $hover-color;
         }
     }
+}
+.btn-bar{
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
 }
 //Footer 
 footer{
