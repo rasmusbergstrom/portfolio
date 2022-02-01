@@ -43,6 +43,20 @@ a{
 p{
     font-weight: $fontWeight500;
 }
+.btn{
+    background-color: $second-color;
+    text-align: center;
+    font-size: 14px;      
+    padding: 3px 10px;
+    font-weight: $fontWeight500;
+    border: $standard-shadow;
+    border-bottom: $bottom-shadow;
+    display: flex;
+    align-items: center;
+    .material-icons{
+        font-weight: 600;
+    }
+}
 .start-section{
     margin-top: 15%;
     padding: 2rem;
@@ -92,6 +106,7 @@ p{
                     padding: 2.5rem;
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                 }
                 .content-text{
                     @media (min-width: 568px) {
@@ -144,20 +159,6 @@ p{
     .btn-bar{
         display: flex;
         justify-content: space-between;
-        .btn{
-            background-color: $second-color;
-            text-align: center;
-            font-size: 14px;      
-            padding: 3px 10px;
-            font-weight: $fontWeight500;
-            border: $standard-shadow;
-            border-bottom: $bottom-shadow;
-            display: flex;
-            align-items: center;
-            .material-icons{
-                font-weight: 600;
-            }
-        }
     }
     .welcome-box{
         margin: auto;
