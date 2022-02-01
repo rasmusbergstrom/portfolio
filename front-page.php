@@ -48,9 +48,9 @@ else:  ?>
 <?php endif;
 ?> 
 </section>
-<div class="btn-bar">
-    <a class="btn end" href="#">
+<section class="btn-bar single">
+    <a class="btn" href="#">
     Alla inlägg
     </a>
-</div>
+</section>
 <?php get_footer(); ?>

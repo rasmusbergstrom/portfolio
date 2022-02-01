@@ -53,7 +53,8 @@ p{
     border-bottom: $bottom-shadow;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 1rem;
     .material-icons{
         font-weight: 600;
     }
@@ -512,10 +513,15 @@ p{
     }
 }
 .btn-bar{
-    max-width: $max-width;
+    max-width: 700px;
+    padding: 4rem;
     margin: auto;
     display: flex;
-    justify-content: center;   
+    justify-content: space-between;  
+    padding: 1rem;
+    &.single{
+        justify-content: center;  
+    } 
 }
 //Footer 
 footer{
