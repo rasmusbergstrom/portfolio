@@ -146,6 +146,10 @@ p {
   font-weight: 400;
 }
 
+.start-section .single-portfolio-card .portfolio-content .portfolio-category-div {
+  margin-top: 1rem;
+}
+
 .start-section .single-portfolio-card .portfolio-content .portfolio-category-div .categories {
   list-style: none;
   display: -webkit-box;

@@ -15,6 +15,14 @@
             <div class="content-text">
                 <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
+            </div>                  
+            <div class="portfolio-img-container">
+                <figure>
+                    <img src="img/example3.mobile.png" alt="">
+                </figure>
+                <figure>
+                    <img src="img/example1.mobile.png" alt="">
+                </figure>
             </div>
             <div class="portfolio-category-div">
                 <ul class="categories"> 
@@ -26,15 +34,7 @@
                     }
                 ?>
                 </ul>
-            </div>                   
-            <div class="portfolio-img-container">
-                <figure>
-                    <img src="img/example3.mobile.png" alt="">
-                </figure>
-                <figure>
-                    <img src="img/example1.mobile.png" alt="">
-                </figure>
-            </div>
+            </div> 
         </article>
     </div>
 <?php 
