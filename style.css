@@ -166,6 +166,7 @@ p {
   border: 2px solid black;
   text-align: center;
   margin-right: .5rem;
+  padding: .1rem .4rem;
 }
 
 .start-section .single-portfolio-card .portfolio-content .portfolio-img-container {
