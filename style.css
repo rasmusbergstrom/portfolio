@@ -58,6 +58,24 @@ p {
   font-weight: 600;
 }
 
+.text-button {
+  padding: .3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.text-button.end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .start-section {
   margin-top: 15%;
   padding: 2rem;
@@ -110,23 +128,6 @@ p {
 
 .start-section .single-portfolio-card .portfolio-header .portfolio-button {
   margin-left: auto;
-}
-
-.start-section .single-portfolio-card .portfolio-header .portfolio-button .port-btn {
-  padding: .3rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  border: none;
-}
-
-.start-section .single-portfolio-card .portfolio-header .portfolio-button .port-btn h4 {
-  font-weight: 500;
-  padding-right: .3rem;
 }
 
 .start-section .single-portfolio-card .portfolio-content {
@@ -363,24 +364,6 @@ p {
 
 .portfolio-section .portfolio-div .portfolio-header .portfolio-button {
   margin-left: auto;
-}
-
-.portfolio-section .portfolio-div .portfolio-header .portfolio-button .port-btn {
-  padding: .3rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  border: none;
-  font-size: .9rem;
-}
-
-.portfolio-section .portfolio-div .portfolio-header .portfolio-button .port-btn a {
-  font-weight: 400;
-  padding-right: .3rem;
 }
 
 .portfolio-section .portfolio-div .portfolio-content {
@@ -739,7 +722,7 @@ p {
   width: 100%;
 }
 
-.global-section .card-content div {
+.global-section .card-content .text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 57%;
           flex: 0 0 57%;
@@ -747,37 +730,18 @@ p {
   margin: 0 .2rem;
 }
 
-.global-section .card-content div h2 {
+.global-section .card-content .text h2 {
   font-weight: 500;
 }
 
-.global-section .card-content div p {
+.global-section .card-content .text p {
   padding: 1rem 0rem;
 }
 
 .global-section .card-content .aboutme-button-bar {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 0px;
-}
-
-.global-section .card-content .aboutme-button-bar div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.global-section .card-content .aboutme-button-bar div a {
-  text-decoration: none;
-  color: black;
-}
-
-.global-section .card-content .aboutme-button-bar div span {
-  font-size: 27px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 .global-section .button-section {

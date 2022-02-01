@@ -57,6 +57,16 @@ p{
         font-weight: 600;
     }
 }
+.text-button{          
+    padding: .3rem 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    &.end{
+        justify-content: end;
+    }
+}
 .start-section{
     margin-top: 15%;
     padding: 2rem;
@@ -84,17 +94,6 @@ p{
                  }
                  .portfolio-button{          
                      margin-left: auto;  
-                     .port-btn{              
-                         padding: .3rem 0;
-                         display: flex;
-                         align-items: center;
-                         background-color: transparent;
-                         border: none;
-                         h4{
-                             font-weight: $fontWeight500;
-                             padding-right: .3rem;
-                         }
-                     }
                  }
             }
             .portfolio-content{
@@ -239,18 +238,6 @@ p{
              }
              .portfolio-button{          
                  margin-left: auto;  
-                 .port-btn{              
-                     padding: .3rem 0;
-                     display: flex;
-                     align-items: center;
-                     background-color: transparent;
-                     border: none;
-                     font-size: .9rem;
-                     a{
-                         font-weight: $fontWeight400;
-                         padding-right: .3rem;
-                     }
-                 }
              }
         }
         .portfolio-content{
@@ -492,7 +479,7 @@ p{
                  width: 100%;
              }
          }
-         div{
+         .text{           
              flex: 0 0 57%;
              padding: 1rem .3rem;
              margin: 0 .2rem;
@@ -504,21 +491,9 @@ p{
              }
          }
          .aboutme-button-bar{
-             flex: 1;
-             margin: 0px;
-             div{ 
-                 display: flex;
-                 justify-content: end;
-                 a{
-                     text-decoration: none;
-                     color: $primary-text-color;
-                 }
-                 span{
-                     font-size: 27px;
-                 }
-             }
+             flex: 0 0 100%;
          }
-     }
+    }
      .button-section{
         margin-top: 1rem;
         display: flex;

@@ -24,7 +24,7 @@ if($the_query -> have_posts()) :
                 <h4><?php the_title(); ?></h4>
             </div>
             <div class="portfolio-button">
-                <div class="port-btn">
+                <div class="text-button">
                     <a href="<?php the_permalink(); ?>">Läs mer</a>
                     <span class="material-icons">
                     arrow_forward

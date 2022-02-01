@@ -5,7 +5,7 @@ if(have_posts()) :
 ?>
 <section class="global-section p-10">
     <article class="card-content">
-        <div>
+        <div class="text">
             <h2><?php the_title() ?></h2>
             <p><?php the_content(); ?></p>
         </div>
@@ -13,7 +13,7 @@ if(have_posts()) :
             <img src="/img/profilbild_mobile.png" srcset="/img/profilbild_table.png 568w" alt="Profilepicture for mobile" >
         </figure>
         <div class="aboutme-button-bar">
-            <div>
+            <div class="text-button end">
                 <a href="continue-about-me.html">Läs mer</a>
                 <span class="material-icons">
                 arrow_forward
