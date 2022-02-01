@@ -43,6 +43,16 @@
         <p><?php esc_html_e('Det finns inget innehåll')?></p>
 <?php endif;
 ?>
+<div class="btn-bar">
+    <a class="btn" href="#">
+    <span class="material-icons">chevron_left</span>
+        Föregående
+    </a>
+    <a class="btn" href="#">
+        Nästa
+        <span class="material-icons">chevron_right</span>
+    </a>
+</div>
 </section>
 <?php get_footer(); ?>
 </body>
