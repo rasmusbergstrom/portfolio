@@ -1,10 +1,14 @@
-<?php get_header(); 
+<?php 
+/* 
+    Template Name: Full width page
+*/
+get_header(); 
 if(have_posts()) : 
     while(have_posts()) :   
         the_post();
 ?>
 <section class="global-section p-10">
-    <article class="card-content">
+    <article class="card-content alternative-article">
         <div>
             <h2><?php the_title() ?></h2>
             <p><?php the_content(); ?></p>
