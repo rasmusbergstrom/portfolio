@@ -106,6 +106,21 @@ p{
                         font-weight: $fontWeight400;
                     }
                 }
+                .portfolio-category-div{
+                    .categories{
+                        list-style: none;
+                        display: flex;
+                        font-weight: $fontWeight500;
+                        li{
+                            background-color: $main-color;
+                            flex: 0 0 20%;;
+                            border: $standard-shadow;
+                            text-align: center;
+                            margin-right: .5rem;
+                            
+                        }
+                    }
+                }
                 .portfolio-img-container{
                     margin-top: 1rem;
                     display: flex;
