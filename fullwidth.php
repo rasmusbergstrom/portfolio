@@ -36,6 +36,15 @@ if(have_posts()) :
             <article class="work-card">
                 <h4><?php the_title(); ?></h4>
                 <p><?php the_excerpt(); ?></p>
+                <?php $working_date = get_field('datum'); 
+                if($working_date) : ?>
+                    <p class="date">
+                    <span class="material-icons">
+                        calendar_month
+                        </span>
+                        <?php echo $working_date ?>
+                    </p>
+                <?php endif; ?>
             </article>
         <?php wp_reset_postdata();
         endforeach; ?>

@@ -195,7 +195,7 @@ p{
             @media (min-width: 568px) {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-around;
                 flex: 0 0 100%;
             }
             .work-card{
@@ -204,7 +204,15 @@ p{
                 border-radius: 10px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 @media (min-width: 568px) {
-                   flex: 0 0 100%;
+                   flex: 0 0 40%;
+                }
+                .date{
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        margin-right: 1rem;
+                    }
                 }
             }
         }
