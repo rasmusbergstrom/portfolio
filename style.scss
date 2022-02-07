@@ -117,54 +117,51 @@ p{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     //Portfolio
     .portfolio-div{
          display: flex;
          flex-wrap: wrap;
          margin-bottom: 2rem;
-         margin: .5rem;
+        margin: .5rem;
          @media (min-width: 568px) {
              flex: 0 0 46%;
          }
          @media (min-width: 780px) {
              flex: 0 0 31%;
-             margin: .1rem;
          }
          @media (min-width: 960px) {
              flex: 0 0 31%;
      }
-         .portfolio-header{
-             flex: 0 0 100%;
-             display: flex; 
-             @media (min-width: 780px) {
-                font-size: 14px;
+        .portfolio-header{
+            flex: 0 0 100%;
+            display: flex;
+            font-size: 14px;           
+        .portfolio-label{
+            padding: .3rem .6rem;
+            background-color: $primary-text-color;
+            color:$seconday-content-color;
+        }
+        .portfolio-button{          
+            margin-left: auto;  
+        }
+        }
+        .portfolio-content{
+            flex: 0 0 100%;
+            border: $standard-shadow;
+            border-bottom: $bottom-shadow;
+            padding: 2rem 1rem;
+            min-height: 400px;
+            background-color: $seconday-content-color;
+            h4{
+                margin-bottom: .3rem;
             }
-              .portfolio-label{
-                  padding: .3rem .6rem;
-                  background-color: $primary-text-color;
-                  color:$seconday-content-color;
-              }
-              .portfolio-button{          
-                 margin-left: auto;  
-              }
-         }
-         .portfolio-content{
-             flex: 0 0 100%;
-             border: $standard-shadow;
-             border-bottom: $bottom-shadow;
-             padding: 2rem 1rem;
-             min-height: 400px;
-             background-color: $seconday-content-color;
-             h4{
-                 margin-bottom: .3rem;
-             }
-             p{
-                 font-weight: $fontWeight400;
-             }
-         }
-     }
+            p{
+                font-weight: $fontWeight400;
+            }
+        }
+    }
     .category-menu{
         margin: auto;
         flex: 0 0 100%;
