@@ -161,48 +161,35 @@ p{
              }
          }
      }
-        //Welcome-Box
-        .welcome-box{
-            margin: auto;
-            max-width: 400px;
-            background-color: $main-color;
-            border: $standard-shadow;
-            border-bottom: $bottom-shadow;
-            padding: 1.5rem 1.5rem;
-            @media (min-width: 780px) {
-                margin-top: 0%;
-                flex: 1;  
-            }
-        }
-        .category-menu{
-            margin: auto;
-            flex: 0 0 100%;
-            .categorys{
+    .category-menu{
+        margin: auto;
+        flex: 0 0 100%;
+        .categorys{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;   
+            li{
+                flex: 0 0 23%;
+                background-color: $main-color;
+                border: $standard-shadow;
+                margin-bottom: 5px;
+                margin-left: 10px;
                 display: flex;
-                flex-wrap: wrap;
-                list-style: none;   
-                li{
-                    flex: 0 0 23%;
-                    background-color: $main-color;
-                    border: $standard-shadow;
-                    margin-bottom: 5px;
-                    margin-left: 10px;
-                    display: flex;
-                    text-align: center;
-                    a{
-                        flex: 1;
-                        font-weight: $fontWeight500;
-                        padding: .5rem 
-                    }
-                    &:hover{
-                        background-color: $hover-color;
-                    }
-                    &.current-menu-item{
-                        background-color: $hover-color;
-                    }
+                text-align: center;
+                a{
+                    flex: 1;
+                    font-weight: $fontWeight500;
+                    padding: .5rem 
+                }
+                &:hover{
+                    background-color: $hover-color;
+                }
+                &.current-menu-item{
+                    background-color: $hover-color;
                 }
             }
         }
+    }
     
     //Category Menu 
     .category-menu{
