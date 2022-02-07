@@ -10,6 +10,7 @@
 </section>
 <section class="container">
 <?php 
+    query_posts('cat=-14'); 
     if(have_posts()) : 
         while(have_posts()) : 
             the_post();  
@@ -31,10 +32,16 @@
     <article class="portfolio-content">
         <h4><?php the_title(); ?></h4>
         <p><?php the_excerpt(); ?></p>
+            <ul class="categorys"> 
+            <?php $categories = get_the_category();
+                foreach ($categories as $category) {
+                    $catName = $category -> name;
+                    $catLink = get_category_link($category -> term_id);
+                    echo "<li><a href='$catLink'>". $catName ."</a></li>";
+                }
+            ?>
+            </ul>
     </article>
-    <div class="portfolio-category-div">
-        <div class="category"></div>
-    </div>
 </div>
 <?php 
         endwhile;

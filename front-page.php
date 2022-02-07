@@ -12,6 +12,7 @@
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
+        'category__not_in' => '14',
         'posts_per_page' => 3,
         'order' => 'DESC',
         'orderby' => 'ID'
@@ -38,10 +39,16 @@
         <article class="portfolio-content">
             <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
+            <ul class="categorys"> 
+            <?php $categories = get_the_category();
+                foreach ($categories as $category) {
+                    $catName = $category -> name;
+                    $catLink = get_category_link($category -> term_id);
+                    echo "<li><a href='$catLink'>". $catName ."</a></li>";
+                }
+            ?>
+            </ul>
         </article>
-        <div class="portfolio-category-div">
-            <div class="category"></div>
-        </div>
     </div>
     <?php
         endwhile;

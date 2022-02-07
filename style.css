@@ -185,8 +185,7 @@ p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 150px;
 }
 
 .about-me-section .card-content.alternative-article .card-text {
@@ -377,8 +376,9 @@ p {
   border: 2px solid black;
   border-bottom: 5px solid black;
   padding: 2rem 1rem;
-  min-height: 400px;
+  min-height: 350px;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .container .portfolio-div .portfolio-content h4 {
@@ -389,49 +389,42 @@ p {
   font-weight: 400;
 }
 
-.container .category-menu {
-  margin: auto;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-}
-
-.container .category-menu .categorys {
+.container .portfolio-div .portfolio-content .categorys {
+  position: absolute;
+  bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .category-menu .categorys li {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 23%;
-          flex: 0 0 23%;
-  background-color: #F9C74F;
+.container .portfolio-div .portfolio-content .categorys li {
+  padding: .2rem;
+  margin: 1rem;
+  background-color: #76C893;
   border: 2px solid black;
-  margin-bottom: 5px;
-  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-.container .category-menu .categorys li a {
+.container .portfolio-div .portfolio-content .categorys li a {
+  font-size: 12px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   font-weight: 500;
-  padding: .5rem;
+  padding: .2rem;
 }
 
-.container .category-menu .categorys li:hover {
+.container .portfolio-div .portfolio-content .categorys li:hover {
   background-color: darkorange;
 }
 
-.container .category-menu .categorys li.current-menu-item {
+.container .portfolio-div .portfolio-content .categorys li.current-menu-item {
   background-color: darkorange;
 }
 

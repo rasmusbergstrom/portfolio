@@ -142,7 +142,7 @@ p{
                 figure{
                     order: -1;               
                     flex: 0 0 100%;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    height: 150px;
                 }
                 .card-text{
                     flex: 0 0 100%;
@@ -248,42 +248,40 @@ p{
             border: $standard-shadow;
             border-bottom: $bottom-shadow;
             padding: 2rem 1rem;
-            min-height: 400px;
+            min-height: 350px;
             background-color: $seconday-content-color;
+            position: relative;
             h4{
                 margin-bottom: .3rem;
             }
             p{
                 font-weight: $fontWeight400;
             }
-        }
-    }
-    .category-menu{
-        margin: auto;
-        flex: 0 0 100%;
-        .categorys{
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;   
-            li{
-                flex: 0 0 23%;
-                background-color: $main-color;
-                border: $standard-shadow;
-                margin-bottom: 5px;
-                margin-left: 10px;
+            .categorys{ 
+                position: absolute;
+                bottom: 10px;
                 display: flex;
-                text-align: center;
-                a{
-                    flex: 1;
-                    font-weight: $fontWeight500;
-                    padding: .5rem 
-                }
-                &:hover{
-                    background-color: $hover-color;
-                }
-                &.current-menu-item{
-                    background-color: $hover-color;
-                }
+                justify-content: center;
+                li{           
+                    padding: .2rem;
+                    margin: 1rem;                  
+                    background-color: $second-color;
+                    border: $standard-shadow;
+                    display: flex;
+                    text-align: center;
+                    a{
+                        font-size: 12px;
+                        flex: 1;
+                        font-weight: $fontWeight500;
+                        padding: .2rem 
+                    }
+                    &:hover{
+                        background-color: $hover-color;
+                    }
+                    &.current-menu-item{
+                        background-color: $hover-color;
+                    }
+                }             
             }
         }
     }
