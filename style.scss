@@ -130,6 +130,7 @@ p{
          }
          @media (min-width: 780px) {
              flex: 0 0 31%;
+             margin: .1rem;
          }
          @media (min-width: 960px) {
              flex: 0 0 31%;
@@ -137,6 +138,9 @@ p{
          .portfolio-header{
              flex: 0 0 100%;
              display: flex; 
+             @media (min-width: 780px) {
+                font-size: 14px;
+            }
               .portfolio-label{
                   padding: .3rem .6rem;
                   background-color: $primary-text-color;

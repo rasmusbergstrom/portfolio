@@ -180,6 +180,7 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 31%;
             flex: 0 0 31%;
+    margin: .1rem;
   }
 }
 
@@ -198,6 +199,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 780px) {
+  .container .portfolio-div .portfolio-header {
+    font-size: 14px;
+  }
 }
 
 .container .portfolio-div .portfolio-header .portfolio-label {
