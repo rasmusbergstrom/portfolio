@@ -1,15 +1,9 @@
-<?php get_header(); ?>
-<!-- <section class="container">
-    <section class="start-section">
-        <div class="welcome-box">
-            <p>Välkommen till min portfolio, här kan ni se mina arbeten som jag jobbat med! </p>
-        </div>
-    </section>
-    <section class="portfolio-section"> -->
-    
+<?php get_header(); 
+  $frontpage_text = get_field('front_text');
+  ?>
     <section class="banner">
         <div class="welcome-box">
-            <p>Välkommen till min portfolio, här kan ni se mina arbeten som jag jobbat med! </p>
+            <p><?php echo $frontpage_text ?> </p>
         </div>
     </section>
     <section class="container">
@@ -55,9 +49,10 @@
         <p><?php esc_html_e('Det finns inga inlägg'); ?> </p>
     <?php endif;
     ?> 
+    <?php $frontpage_link = get_field('front_btn'); ?>
     <section class="btn-bar single">
-        <a class="btn" href="#">
-        Alla inlägg
+        <a class="btn" href="<?php echo $frontpage_link['url']; ?>">  
+        <?php echo $frontpage_link['title']; ?>
         </a>
     </section>
 </section>
