@@ -1,11 +1,12 @@
 <?php get_header(); 
   $frontpage_text = get_field('front_text');
-  ?>
+  if($frontpage_text) : ?>
     <section class="banner">
         <div class="welcome-box">
             <p><?php echo $frontpage_text ?> </p>
         </div>
     </section>
+    <? endif ?>
     <section class="container">
     <?php 
     $args = array(
@@ -49,11 +50,13 @@
         <p><?php esc_html_e('Det finns inga inlägg'); ?> </p>
     <?php endif;
     ?> 
-    <?php $frontpage_link = get_field('front_btn'); ?>
+    <?php $frontpage_link = get_field('front_btn'); 
+    if($frontpage_link) : ?>
     <section class="btn-bar single">
         <a class="btn" href="<?php echo $frontpage_link['url']; ?>">  
         <?php echo $frontpage_link['title']; ?>
         </a>
     </section>
+    <?php endif; ?>
 </section>
 <?php get_footer(); ?>
