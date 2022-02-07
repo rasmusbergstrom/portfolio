@@ -242,6 +242,33 @@ p{
         align-items: center;
         justify-content: center;
     }
+    //ERROR-DIV
+    .error-div{
+        margin: 5rem 1rem;
+        padding: 1.5rem 1.5rem;
+        .error-header{
+            flex: 0 0 100%;
+            display: flex;
+            .error-label{
+                padding: .2rem 1.5rem;
+                background-color: yellow;
+                border: solid 2px $primary-text-color;
+                border-bottom: none;
+            }
+        }
+        .error-content{
+            border: $standard-shadow;
+            border-bottom: $bottom-shadow;
+            background-color: $seconday-content-color;
+            padding: 2rem;
+            @media (min-width: 750px) {
+                padding: 5rem;
+            }
+            h4{
+                font-weight: 400;
+            }
+        }
+    }
     //Portfolio
     .portfolio-div{
          display: flex;
@@ -453,6 +480,7 @@ p{
         }
     }
 }
+
 
 //HEADER & MENU
 .home-header{

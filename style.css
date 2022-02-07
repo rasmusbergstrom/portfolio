@@ -364,6 +364,44 @@ p {
   }
 }
 
+.container .error-div {
+  margin: 5rem 1rem;
+  padding: 1.5rem 1.5rem;
+}
+
+.container .error-div .error-header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .error-div .error-header .error-label {
+  padding: .2rem 1.5rem;
+  background-color: yellow;
+  border: solid 2px black;
+  border-bottom: none;
+}
+
+.container .error-div .error-content {
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+
+@media (min-width: 750px) {
+  .container .error-div .error-content {
+    padding: 5rem;
+  }
+}
+
+.container .error-div .error-content h4 {
+  font-weight: 400;
+}
+
 .container .portfolio-div {
   display: -webkit-box;
   display: -ms-flexbox;
