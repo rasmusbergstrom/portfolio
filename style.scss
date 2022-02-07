@@ -47,13 +47,14 @@ p{
 .btn-bar{
     margin: auto;
     display: flex;
-    justify-content: space-between; 
-    padding-top: 2rem;
+    justify-content: space-between;  
     @media (min-width: 568px) {
     flex: 0 0 100%;
+    max-width: $max-width;
+    padding: 2rem;
     }
     &.single{
-    justify-content: center;  
+    justify-content: center; 
     } 
 }
 .btn{
@@ -238,12 +239,16 @@ p{
     max-width: $max-width;
     margin: auto;
     margin-top: 20%;
-    padding: 1rem;
+    padding: 2rem;
+    @media (min-width: 568px) {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
     @media (min-width: 780px) {
         margin-top: 10%;
-    }
-    @media (min-width: 980px) {
-        
     }
     .single-portfolio-card{
         display: flex;
@@ -251,81 +256,81 @@ p{
         margin-bottom: 2rem;
         justify-content: center;
         .single-portfolio-header{
-                flex: 0 0 100%;
-                display: flex; 
+            flex: 0 0 100%;
+            display: flex; 
+            @media (min-width: 568px) {
+                justify-content: center;
+            }
+            .single-portfolio-label{
+                padding: .3rem .6rem;
+                background-color: $primary-text-color;
+                color:$seconday-content-color;
+            }
+            .single-portfolio-button{          
+                margin-left: auto;  
+            }
+        }
+        .single-portfolio-content{
+            border: $standard-shadow;
+            border-bottom: $bottom-shadow;
+            padding: 2rem 1rem;
+            background-color: $seconday-content-color;
+            @media (min-width: 568px) {
+                padding: 2.5rem;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex: 0 0 80%;
+                min-height: 60vh;
+            }
+            .single-content-text{
                 @media (min-width: 568px) {
-                    justify-content: center;
+                    flex: 0 0 60%;
                 }
-                .single-portfolio-label{
-                    padding: .3rem .6rem;
-                    background-color: $primary-text-color;
-                    color:$seconday-content-color;
+                h4{
+                margin-bottom: .3rem;
+                    font-size: 1.2rem;
+                    font-weight: $fontWeight500;
                 }
-                .single-portfolio-button{          
-                    margin-left: auto;  
+                p{
+                    font-weight: $fontWeight400;
                 }
             }
-            .single-portfolio-content{
-                border: $standard-shadow;
-                border-bottom: $bottom-shadow;
-                padding: 2rem 1rem;
-                background-color: $seconday-content-color;
+            .single-portfolio-category-div{
+                margin-top: 2rem;
+                .categories{
+                    list-style: none;
+                    display: flex;
+                    font-weight: $fontWeight500;
+                    li{
+                        background-color: $main-color;
+                        flex: 0 0 20%;;
+                        border: $standard-shadow;
+                        text-align: center;
+                        margin-right: .5rem;
+                        padding: .1rem .4rem;
+                    }
+                }
+            }
+            .single-portfolio-img-container{
+                margin-top: 1rem;
+                display: flex;
+                justify-content: space-between;  
                 @media (min-width: 568px) {
-                    padding: 2.5rem;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    flex: 0 0 80%;
-                    min-height: 60vh;
-                }
-                .single-content-text{
-                    @media (min-width: 568px) {
-                        flex: 0 0 60%;
-                    }
-                    h4{
-                    margin-bottom: .3rem;
-                        font-size: 1.2rem;
-                        font-weight: $fontWeight500;
-                    }
-                    p{
-                        font-weight: $fontWeight400;
-                    }
-                }
-                .single-portfolio-category-div{
-                    margin-top: 2rem;
-                    .categories{
-                        list-style: none;
-                        display: flex;
-                        font-weight: $fontWeight500;
-                        li{
-                            background-color: $main-color;
-                            flex: 0 0 20%;;
-                            border: $standard-shadow;
-                            text-align: center;
-                            margin-right: .5rem;
-                            padding: .1rem .4rem;
-                        }
-                    }
-                }
-                .single-portfolio-img-container{
-                    margin-top: 1rem;
-                    display: flex;
-                    justify-content: space-between;  
-                    @media (min-width: 568px) {
-                        flex: 0 0 35%;
-                        flex-flow: column;
-                    } 
-                    figure{              
-                        img{ 
-                        width: 100%;
-                            height: 100%;
-                            display: block;
-                            border: solid 2px black;   
-                        }
+                    flex: 0 0 35%;
+                    flex-flow: column;
+                } 
+                figure{              
+                    img{ 
+                    width: 100%;
+                        height: 100%;
+                        display: block;
+                        border: solid 2px black;   
                     }
                 }
             }
         }
+    }
 }
 
 //HEADER & MENU

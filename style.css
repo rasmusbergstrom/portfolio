@@ -46,7 +46,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2rem;
 }
 
 @media (min-width: 568px) {
@@ -54,6 +53,8 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    max-width: 1200px;
+    padding: 2rem;
   }
 }
 
@@ -346,7 +347,24 @@ p {
   max-width: 1200px;
   margin: auto;
   margin-top: 20%;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+@media (min-width: 568px) {
+  .singlecontainer-section {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 780px) {
