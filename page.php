@@ -3,14 +3,14 @@ if(have_posts()) :
     while(have_posts()) :   
         the_post();
 ?>
-<section class="global-section p-10">
+<section class="about-me-section">
     <article class="card-content">
-        <div class="text">
-            <h2><?php the_title() ?></h2>
+        <h2><?php the_title(); ?> </h2>
+        <div class="card-text">
             <p><?php the_content(); ?></p>
         </div>
         <figure>
-            <img src="/img/profilbild_mobile.png" srcset="/img/profilbild_table.png 568w" alt="Profilepicture for mobile" >
+            <?php the_post_thumbnail(); ?> 
         </figure>
         <div class="aboutme-button-bar">
             <div class="text-button end">

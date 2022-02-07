@@ -36,6 +36,12 @@ body{
         top:32px;
     }
 }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
 a{
     color: $primary-text-color;
     text-decoration: none;
@@ -109,7 +115,80 @@ p{
     
 }
 
-///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////¨
+.about-me-section{
+    padding-top: 10rem;
+    @media (min-width: 568px) {
+        max-width: 950px;
+        margin: auto;
+    }
+    .card-content{
+        background-color: $seconday-content-color;
+        border: $standard-shadow;
+        border-bottom: $bottom-shadow;    
+        display: flex;     
+        flex-wrap: wrap;
+        margin: 1rem;
+        padding: 1rem;
+            h2{
+                flex: 0 0 100%;
+            }
+            figure{
+                height: 300px;
+                flex: 0 0 50%;
+                @media (min-width: 568px) {
+                    flex: 0 0 30%;
+                }
+                @media (min-width: 950px) {
+                    flex: 0 0 20%;
+                }
+            }
+            .card-text{
+                flex: 0 0 50%;
+                @media (min-width: 568px) {
+                    flex: 0 0 70%;
+                }
+                @media (min-width: 950px) {
+                    flex: 0 0 80%;
+                }
+                h2{      
+                    font-weight: 500;
+                }
+                p{    
+                    padding: 1rem 0rem;   
+                }
+            }
+            .aboutme-button-bar{
+                flex: 0 0 100%;
+                margin: 0px;
+                div{ 
+                    display: flex;
+                    justify-content: end;
+                    a{
+                        text-decoration: none;
+                        color: $primary-text-color;
+                    }
+                    span{
+                        font-size: 27px;
+                    }
+                }
+            }
+    }
+    .button-section{
+       margin-top: 1rem;
+       display: flex;
+       justify-content: end;
+       .back-button{
+           background-color: $main-color;
+           border: $standard-shadow;
+           padding: .2rem .5rem;
+       }
+       :hover{
+           background-color: $hover-color;
+       }
+   }
+}
+
 .container{ 
     padding: 2rem;
     @media (min-width: 568px) {
@@ -234,6 +313,7 @@ p{
         }
     }
 }
+
 
 .singlecontainer-section{
     max-width: $max-width;
