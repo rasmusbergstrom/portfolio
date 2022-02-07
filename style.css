@@ -293,6 +293,11 @@ p {
 }
 
 .about-me-section .card-content .work-section .work-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -309,7 +314,9 @@ p {
 }
 
 .about-me-section .card-content .work-section .work-card .date {
-  margin-top: 1rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +405,7 @@ p {
   }
 }
 
-.container .error-div .error-content h4 {
+.container .error-div .error-content h1 {
   font-weight: 400;
 }
 
@@ -885,9 +892,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * Template Name: 404 Content
+ */
+get_header(); ?>
     <section class="container">
         <div class ="error-div">
             <div class="error-header">
@@ -7,7 +11,7 @@
                 </div>
             </div>
             <article class="error-content">
-                <h4>Ops! Här blev det fel</h4>
+                <h1>Ops! Här blev det fel</h1>
             </article>
         </div>
         <div class="btn-bar single">

@@ -199,6 +199,8 @@ p{
                 flex: 0 0 100%;
             }
             .work-card{
+                display: flex;
+                flex-wrap: wrap;
                 margin-top: 1rem;
                 padding: 1rem;
                 border-radius: 10px;
@@ -207,7 +209,8 @@ p{
                    flex: 0 0 40%;
                 }
                 .date{
-                    margin-top: 1rem;
+                    align-self: flex-end;
+                    margin-top: .5rem;
                     display: flex;
                     align-items: center;
                     span{
@@ -264,7 +267,7 @@ p{
             @media (min-width: 750px) {
                 padding: 5rem;
             }
-            h4{
+            h1{
                 font-weight: 400;
             }
         }
@@ -576,7 +579,7 @@ p{
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                align-items: stretch;
+                
                 justify-content: space-between;
                 flex: 1;
                 @media (min-width: 768px) {
