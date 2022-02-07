@@ -150,7 +150,7 @@ p {
 
 @media (min-width: 568px) {
   .about-me-section {
-    max-width: 950px;
+    max-width: 750px;
     margin: auto;
   }
 }
@@ -186,16 +186,16 @@ p {
 @media (min-width: 568px) {
   .about-me-section .card-content figure {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
   }
 }
 
 @media (min-width: 950px) {
   .about-me-section .card-content figure {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 20%;
-            flex: 0 0 20%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
   }
 }
 
@@ -208,16 +208,16 @@ p {
 @media (min-width: 568px) {
   .about-me-section .card-content .card-text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
   }
 }
 
 @media (min-width: 950px) {
   .about-me-section .card-content .card-text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 80%;
-            flex: 0 0 80%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
   }
 }
 
