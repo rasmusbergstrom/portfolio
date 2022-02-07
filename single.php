@@ -1,22 +1,22 @@
 <?php get_header(); ?>
-<section class="start-section">
+<section class="singlecontainer-section">
 <?php 
     if(have_posts()) : 
         while(have_posts()) :
             the_post();
 ?>  
     <div class="single-portfolio-card">
-        <div class="portfolio-header">
-            <div class="portfolio-label">
+        <div class="single-portfolio-header">
+            <div class="single-portfolio-label">
                 <h4><?php the_title(); ?></h4>
             </div>
         </div>
-        <article class="portfolio-content">
-            <div class="content-text">
+        <article class="single-portfolio-content">
+            <div class="single-content-text">
                 <h4><?php the_title(); ?></h4>
             <p><?php the_excerpt(); ?></p>
             </div>                  
-            <div class="portfolio-img-container">
+            <div class="single-portfolio-img-container">
                 <figure>
                     <img src="img/example3.mobile.png" alt="">
                 </figure>
@@ -24,7 +24,7 @@
                     <img src="img/example1.mobile.png" alt="">
                 </figure>
             </div>
-            <div class="portfolio-category-div">
+            <div class="single-portfolio-category-div">
                 <ul class="categories"> 
                 <?php $categories = get_the_category();
                     foreach ($categories as $category) {
@@ -43,7 +43,6 @@
         <p><?php esc_html_e('Det finns inget innehåll')?></p>
 <?php endif;
 ?>
-</section>
 <section class="btn-bar">
     <a class="btn" href="#">
     <span class="material-icons">chevron_left</span>
@@ -51,7 +50,7 @@
     </a>
     <a class="btn" href="#">
         Nästa
-        <span class="material-icons">chevron_right</span>
+    <span class="material-icons">chevron_right</span>
     </a>
 </section>
 <?php get_footer(); ?>

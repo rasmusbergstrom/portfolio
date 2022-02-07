@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="start-section">
+<section class="container">
 <nav class="category-menu">
     <?php wp_nav_menu(array(
         'theme_location' => 'categorymenu',
@@ -8,7 +8,7 @@
     ?>
 </nav>
 </section>
-<section class="portfolio-section">
+<section class="container">
 <?php 
     if(have_posts()) : 
         while(have_posts()) : 
