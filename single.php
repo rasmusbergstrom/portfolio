@@ -17,11 +17,15 @@
             <p><?php the_excerpt(); ?></p>
             </div>                  
             <div class="single-portfolio-img-container">
+                <?php 
+                    $img1 = get_field('bild_1');
+                    $img2 = get_field('bild_2');
+                ?>
                 <figure>
-                    <img src="img/example3.mobile.png" alt="">
+                    <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
                 </figure>
                 <figure>
-                    <img src="img/example1.mobile.png" alt="">
+                    <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
                 </figure>
             </div>
             <div class="single-portfolio-category-div">
