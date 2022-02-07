@@ -27,18 +27,28 @@ if(have_posts()) :
                 </span>
             </div>
         </div>
+        <?php endif; 
+        $working_posts = get_field('working_posts');
+        if($working_posts) : ?>
+            <section class="work-section">
+            <?php foreach($working_posts as $post) : 
+               setup_postdata($post); ?>
+            <article class="work-card">
+                <h4><?php the_title(); ?></h4>
+                <p><?php the_excerpt(); ?></p>
+            </article>
+        <?php wp_reset_postdata();
+        endforeach; ?>
         <?php endif; ?>
+        </section>
     </article>
-    <?php $next_link = get_field('navigate_to_page');
-    if($next_link) : ?>
     <div class="button-section">
         <div class="back-button">
-            <a href="<?php echo $next_link['url']; ?>">
-            <?php echo $next_link['title']; ?>
+            <a href="javascript:history.back()">
+                Tillbaka
             </a>
         </div>
-    </div> 
-    <?php endif; ?>
+    </div>
 </section>
 <?php 
     endwhile;

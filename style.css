@@ -170,7 +170,6 @@ p {
 
 .about-me-section .card-content p {
   font-weight: 300;
-  padding: 1rem 0rem;
 }
 
 .about-me-section .card-content.alternative-article h2 {
@@ -271,6 +270,43 @@ p {
 
 .about-me-section .card-content .aboutme-button-bar div span {
   font-size: 27px;
+}
+
+.about-me-section .card-content .work-section {
+  border-top: 1px solid black;
+  margin: 1rem .2rem;
+}
+
+@media (min-width: 568px) {
+  .about-me-section .card-content .work-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.about-me-section .card-content .work-section .work-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 568px) {
+  .about-me-section .card-content .work-section .work-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .about-me-section .button-section {
