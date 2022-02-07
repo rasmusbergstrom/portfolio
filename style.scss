@@ -136,6 +136,7 @@ p{
             figure{
                 height: 300px;
                 flex: 0 0 50%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 @media (min-width: 568px) {
                     flex: 0 0 30%;
                 }
@@ -160,7 +161,7 @@ p{
             }
             .aboutme-button-bar{
                 flex: 0 0 100%;
-                margin: 0px;
+                margin-top: 1rem;
                 div{ 
                     display: flex;
                     justify-content: end;
