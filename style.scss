@@ -130,12 +130,31 @@ p{
         flex-wrap: wrap;
         margin: 1rem;
         padding: 1rem;
+        p{
+            font-weight: 300;
+            padding: 1rem 0rem; 
+        }
+            &.alternative-article{
+                h2{    
+                    margin-top: 1rem;  
+                    font-weight: 500;
+                }
+                figure{
+                    order: -1;               
+                    flex: 0 0 100%;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+                .card-text{
+                    flex: 0 0 100%;
+                }
+
+            }
             h2{
                 flex: 0 0 100%;
             }
             figure{
                 height: 300px;
-                flex: 0 0 50%;
+                flex: 0 0 40%;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 @media (min-width: 568px) {
                     flex: 0 0 40%;
@@ -145,19 +164,15 @@ p{
                 }
             }
             .card-text{
-                flex: 0 0 50%;
+                flex: 0 0 60%;
+                padding-right: 1rem;
                 @media (min-width: 568px) {
                     flex: 0 0 60%;
                 }
                 @media (min-width: 950px) {
                     flex: 0 0 70%;
                 }
-                h2{      
-                    font-weight: 500;
-                }
-                p{    
-                    padding: 1rem 0rem;   
-                }
+
             }
             .aboutme-button-bar{
                 flex: 0 0 100%;

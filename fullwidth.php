@@ -7,31 +7,38 @@ if(have_posts()) :
     while(have_posts()) :   
         the_post();
 ?>
-<section class="global-section p-10">
+<section class="about-me-section">
     <article class="card-content alternative-article">
-        <div>
-            <h2><?php the_title() ?></h2>
+        <h2><?php the_title(); ?> </h2>
+        <div class="card-text">
             <p><?php the_content(); ?></p>
         </div>
         <figure>
-            <img src="/img/profilbild_mobile.png" srcset="/img/profilbild_table.png 568w" alt="Profilepicture for mobile" >
+            <?php the_post_thumbnail(); ?> 
         </figure>
+        <?php $next_link = get_field('navigate_to_page'); 
+        if($next_link) : ?>
         <div class="aboutme-button-bar">
-            <div>
-                <a href="continue-about-me.html">Läs mer</a>
+            <div class="text-button end">
+                <a href="<?php echo $next_link['url']; ?>">
+                <?php echo $next_link['title']; ?></a>
                 <span class="material-icons">
                 arrow_forward
                 </span>
             </div>
         </div>
+        <?php endif; ?>
     </article>
+    <?php $next_link = get_field('navigate_to_page');
+    if($next_link) : ?>
     <div class="button-section">
         <div class="back-button">
-            <a href="/home.html">
-                Tillbaka
+            <a href="<?php echo $next_link['url']; ?>">
+            <?php echo $next_link['title']; ?>
             </a>
         </div>
-    </div>
+    </div> 
+    <?php endif; ?>
 </section>
 <?php 
     endwhile;

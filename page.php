@@ -12,18 +12,22 @@ if(have_posts()) :
         <figure>
             <?php the_post_thumbnail(); ?> 
         </figure>
+        <?php $next_link = get_field('navigate_to_page'); 
+        if($next_link) : ?>
         <div class="aboutme-button-bar">
             <div class="text-button end">
-                <a href="continue-about-me.html">Läs mer</a>
+                <a href="<?php echo $next_link['url']; ?>">
+                <?php echo $next_link['title']; ?></a>
                 <span class="material-icons">
                 arrow_forward
                 </span>
             </div>
         </div>
+        <?php endif; ?>
     </article>
     <div class="button-section">
         <div class="back-button">
-            <a href="javascript:history.back()">
+            <a href="javascript:history.back">
                 Tillbaka
             </a>
         </div>
