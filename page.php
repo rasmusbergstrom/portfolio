@@ -23,7 +23,7 @@ if(have_posts()) :
     </article>
     <div class="button-section">
         <div class="back-button">
-            <a href="/home.html">
+            <a href="javascript:history.back()">
                 Tillbaka
             </a>
         </div>
