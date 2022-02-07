@@ -176,7 +176,7 @@ p{
         }
         .category-menu{
             margin: auto;
-            max-width: 400px;
+            flex: 0 0 100%;
             .categorys{
                 display: flex;
                 flex-wrap: wrap;
