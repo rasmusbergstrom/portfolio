@@ -21,12 +21,15 @@
                     $img1 = get_field('bild_1');
                     $img2 = get_field('bild_2');
                 ?>
-                <figure>
-                    <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
-                </figure>
-                <figure>
-                    <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
-                </figure>
+                <?php if($img1) : ?>
+                    <figure>
+                        <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
+                    </figure>
+                    <?php if(!empty($img2['url']));?>
+                    <figure>
+                        <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
+                    </figure>         
+                <?php endif; ?>
             </div>
             <div class="single-portfolio-category-div">
                 <ul class="categories"> 
