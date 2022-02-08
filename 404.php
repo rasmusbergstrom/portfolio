@@ -2,24 +2,35 @@
 /**
  * Template Name: 404 Content
  */
-get_header(); ?>
+get_header(); 
+$id = 177; //404-page ID
+$title = get_field('title_404', $id);
+$textcontent = get_field('textfield_404', $id);
+$link = get_field('link_404', $id);
+?>
     <section class="container">
         <div class ="error-div">
             <div class="error-header">
                 <div class="error-label">
-                    <h4 class="errorlabel">404</h4>
+                    <?php if($title) : ?> 
+                        <h4 class="errorlabel"><?php echo $title; ?></h4>
+                    <?php endif; ?> 
                 </div>
             </div>
             <article class="error-content">
-                <h1>Ops! Här blev det fel</h1>
+                <?php if($textcontent) : ?>
+                    <h1><?php echo $textcontent; ?> </h1>
+                <?php endif; ?>
             </article>
         </div>
         <div class="btn-bar single">
-            <div class="btn">
-                <a href="javascript:history.back()">
-                    Tillbaka
-                </a>
-            </div>
+            <?php if(!empty($link['url'])) : ?>
+                <div class="btn">
+                    <a href="<?php echo $link['url']; ?>">
+                        <?php echo $link['title']; ?>
+                    </a>
+                </div>
+            <?php endif; ?> 
         </div>
     </section>
     <script src="script.js"></script>
