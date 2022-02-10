@@ -2,30 +2,29 @@
 /* 
     Template Name: Contact page
 */
+get_header(); 
+if(have_posts()) : 
+    while(have_posts()) :   
+        the_post();
 ?>
 <section class="about-me-section">
 <?php 
     
 ?>
-    <article class="card-content">
-        <div>
-            <h2><?php the_title(); ?> </h2>
-            <p>
-                Ni når mig via epost
-                <a href="mailto:rasmusbergstrom@live.com">Rasmusbergstrom@live.com</a>
-            </p>
-            <p>
-                Eller på telefon
-                <a href="callto:0709108420">0709108420</a> 
-            </p>
-        </div>
-    </article>
-    <div class="button-section">
-        <div class="back-button">
-            <a href="/home.html">
-                Tillbaka
-            </a>
-        </div>
+<article class="card-content">
+    <div class="form-div">
+        <h1> <?php the_title(); ?></h1>
+        <?php echo apply_shortcodes( '[contact-form-7 id="187" title="Kontaktformulär 1" html_id="contact-form"]' ); ?>
     </div>
+</article>
+<div class="button-section">
+    <div class="back-button">
+        <a href="javascript:history.back()">
+            Tillbaka
+        </a>
+    </div>
+</div>
 </section>
+<?php endwhile; 
+endif; ?>
 <?php get_footer(); ?>

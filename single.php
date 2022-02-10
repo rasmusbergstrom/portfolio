@@ -51,12 +51,12 @@
 <?php endif;
 ?>
 <section class="btn-bar">
-    <a class="btn" href="#">
+    <a class="btn" href="">
     <span class="material-icons">chevron_left</span>
         Föregående
     </a>
-    <a class="btn" href="#">
-        Nästa
+    <a class="btn" href="">
+        
     <span class="material-icons">chevron_right</span>
     </a>
 </section>

@@ -11,7 +11,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins";
 }
 
 body {
@@ -164,8 +163,116 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 1rem;
   padding: 1rem;
+}
+
+@media (min-width: 568px) {
+  .about-me-section .card-content .form-div {
+    max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+}
+
+.about-me-section .card-content .form-div h1 {
+  padding: 1rem;
+}
+
+@media (min-width: 568px) {
+  .about-me-section .card-content .form-div h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.about-me-section .card-content .form-div #contact-form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-me-section .card-content .form-div #contact-form div {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 568px) {
+  .about-me-section .card-content .form-div #contact-form div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.about-me-section .card-content .form-div #contact-form div label {
+  background-color: #F9C74F;
+  border: 2px solid black;
+  border-bottom: none;
+  padding: .1rem .3rem;
+  text-align: center;
+}
+
+.about-me-section .card-content .form-div #contact-form div input {
+  width: 100%;
+  padding: .5rem;
+  border: 2px solid black;
+  -webkit-appearance: none;
+}
+
+.about-me-section .card-content .form-div #contact-form div input:focus {
+  outline-color: darkorange;
+}
+
+.about-me-section .card-content .form-div #contact-form div textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid black;
+  padding: .4rem .2rem;
+  -webkit-appearance: none;
+}
+
+.about-me-section .card-content .form-div #contact-form div textarea:focus {
+  outline-color: darkorange;
+}
+
+.about-me-section .card-content .form-div #contact-form .send-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.about-me-section .card-content .form-div #contact-form .send-btn input {
+  width: 100%;
+  padding: .7rem;
+  -webkit-appearance: none;
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: #76C893;
 }
 
 .about-me-section .card-content p {
