@@ -228,7 +228,7 @@ p {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 472px) {
   .about-me-section .card-content .form-div #contact-form div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;

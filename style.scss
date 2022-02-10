@@ -49,7 +49,6 @@ a{
 p{
     font-weight: $fontWeight500;
 }
-  //Button-bar
 .btn-bar{
     margin: auto;
     display: flex;
@@ -155,9 +154,9 @@ p{
                 padding: 1rem;  
                 display: flex;
                 flex-wrap: wrap;
-                div{           
+                div{          
                     margin-bottom: 1rem;
-                    @media (min-width: 568px) {
+                    @media (min-width: 472px) {
                         flex: 0 0 100%;
                     }
                     label{
