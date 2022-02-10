@@ -25,8 +25,8 @@ if(have_posts()) :
         </div>
         <?php endif; ?>
     </article>
-    <div class="button-section">
-        <div class="back-button">
+    <div class="btn-bar end">
+        <div class="btn">
             <a href="javascript:history.back()">
                 Tillbaka
             </a>

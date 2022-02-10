@@ -53,11 +53,16 @@ p{
 .btn-bar{
     margin: auto;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    padding: 0rem;  
     @media (min-width: 568px) {
-    flex: 0 0 100%;
-    max-width: $max-width;
-    padding: 2rem;
+        flex: 0 0 100%;
+        max-width: $max-width;
+        padding: 1rem 6rem;
+    }
+    &.end{
+        justify-content: end;
+        padding: 1rem 1.2rem;
     }
     &.single{
     justify-content: center; 
@@ -74,7 +79,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 1rem;
     .material-icons{
         font-weight: 600;
     }
@@ -114,8 +118,6 @@ p{
     }
     
 }
-
-///////////////////////////////////////////////////////////////////////////////¨
 .about-me-section{
     padding-top: 10rem;
     @media (min-width: 568px) {
@@ -200,7 +202,6 @@ p{
         }
         p{
             font-weight: 300;
-            //padding: 1rem 0rem; 
         }
             &.alternative-article{
                 h2{    

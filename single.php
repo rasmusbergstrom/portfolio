@@ -5,45 +5,45 @@
         while(have_posts()) :
             the_post();
 ?>  
-    <div class="single-portfolio-card">
-        <div class="single-portfolio-header">
-            <div class="single-portfolio-label">
-                <h4><?php the_title(); ?></h4>
-            </div>
+<div class="single-portfolio-card">
+    <div class="single-portfolio-header">
+        <div class="single-portfolio-label">
+            <h4><?php the_title(); ?></h4>
         </div>
-        <article class="single-portfolio-content">
-            <div class="single-content-text">
-                <h4><?php the_title(); ?></h4>
-            <p><?php the_excerpt(); ?></p>
-            </div>                  
-            <div class="single-portfolio-img-container">
-                <?php 
-                    $img1 = get_field('bild_1');
-                    $img2 = get_field('bild_2');
-                ?>
-                <?php if($img1) : ?>
-                    <figure>
-                        <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
-                    </figure>
-                    <?php if(!empty($img2['url']));?>
-                    <figure>
-                        <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
-                    </figure>         
-                <?php endif; ?>
-            </div>
-            <div class="single-portfolio-category-div">
-                <ul class="categories"> 
-                <?php $categories = get_the_category();
-                    foreach ($categories as $category) {
-                       $catName = $category -> name;
-                       $catLink = get_category_link($category -> term_id);
-                       echo "<li><a href='$catLink'>". $catName ."</a></li>";
-                    }
-                ?>
-                </ul>
-            </div> 
-        </article>
     </div>
+    <article class="single-portfolio-content">
+        <div class="single-content-text">
+            <h4><?php the_title(); ?></h4>
+        <p><?php the_excerpt(); ?></p>
+        </div>                  
+        <div class="single-portfolio-img-container">
+            <?php 
+                $img1 = get_field('bild_1');
+                $img2 = get_field('bild_2');
+            ?>
+            <?php if($img1) : ?>
+                <figure>
+                    <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
+                </figure>
+                <?php if(!empty($img2['url']));?>
+                <figure>
+                    <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
+                </figure>         
+            <?php endif; ?>
+        </div>
+        <div class="single-portfolio-category-div">
+            <ul class="categories"> 
+            <?php $categories = get_the_category();
+                foreach ($categories as $category) {
+                    $catName = $category -> name;
+                    $catLink = get_category_link($category -> term_id);
+                    echo "<li><a href='$catLink'>". $catName ."</a></li>";
+                }
+            ?>
+            </ul>
+        </div> 
+    </article>
+</div>
 <?php 
         endwhile;
     else : ?>

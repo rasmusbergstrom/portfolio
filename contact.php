@@ -17,13 +17,13 @@ if(have_posts()) :
         <?php echo apply_shortcodes( '[contact-form-7 id="187" title="Kontaktformulär 1" html_id="contact-form"]' ); ?>
     </div>
 </article>
-<div class="button-section">
-    <div class="back-button">
-        <a href="javascript:history.back()">
-            Tillbaka
-        </a>
+<div class="btn-bar end">
+        <div class="btn">
+            <a href="javascript:history.back()">
+                Tillbaka
+            </a>
+        </div>
     </div>
-</div>
 </section>
 <?php endwhile; 
 endif; ?>

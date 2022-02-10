@@ -53,6 +53,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0rem;
 }
 
 @media (min-width: 568px) {
@@ -61,8 +62,15 @@ p {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 1200px;
-    padding: 2rem;
+    padding: 1rem 6rem;
   }
+}
+
+.btn-bar.end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 1rem 1.2rem;
 }
 
 .btn-bar.single {
@@ -88,7 +96,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 1rem;
 }
 
 .btn .material-icons {
