@@ -3,7 +3,7 @@ if(have_posts()) :
     while(have_posts()) :   
         the_post();
 ?>
-<section class="about-me-section">
+<section class="singlecontainer-section">
     <article class="card-content">
         <h2><?php the_title(); ?> </h2>
         <div class="card-text">
