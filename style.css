@@ -58,10 +58,10 @@ p {
 
 @media (min-width: 568px) {
   .btn-bar {
+    max-width: 750px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    max-width: 1200px;
     padding: 1rem 6rem;
   }
 }
@@ -438,111 +438,6 @@ p {
   max-width: 750px;
 }
 
-@media (min-width: 568px) {
-  .singlecontainer-section .card-content .form-div {
-    max-width: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 1rem;
-  }
-}
-
-.singlecontainer-section .card-content .form-div h1 {
-  padding: 1rem;
-}
-
-@media (min-width: 568px) {
-  .singlecontainer-section .card-content .form-div h1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-  }
-}
-
-.singlecontainer-section .card-content .form-div #contact-form {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form div {
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 472px) {
-  .singlecontainer-section .card-content .form-div #contact-form div {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-  }
-}
-
-.singlecontainer-section .card-content .form-div #contact-form div label {
-  background-color: #F9C74F;
-  border: 2px solid black;
-  border-bottom: none;
-  padding: .1rem .3rem;
-  text-align: center;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form div input {
-  width: 100%;
-  padding: .5rem;
-  border: 2px solid black;
-  -webkit-appearance: none;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form div input:focus {
-  outline-color: darkorange;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form div textarea {
-  width: 100%;
-  resize: none;
-  border: 2px solid black;
-  padding: .4rem .2rem;
-  -webkit-appearance: none;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form div textarea:focus {
-  outline-color: darkorange;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form .send-btn {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-}
-
-.singlecontainer-section .card-content .form-div #contact-form .send-btn input {
-  width: 100%;
-  padding: .7rem;
-  -webkit-appearance: none;
-  border: 2px solid black;
-  font-weight: bold;
-  background-color: #76C893;
-}
-
 .singlecontainer-section .card-content p {
   font-weight: 300;
 }
@@ -575,10 +470,12 @@ p {
 }
 
 .singlecontainer-section .card-content figure {
+  -ms-grid-column-align: start;
+      justify-self: start;
   height: 300px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -586,8 +483,16 @@ p {
 @media (min-width: 568px) {
   .singlecontainer-section .card-content figure {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+  }
+}
+
+@media (min-width: 750px) {
+  .singlecontainer-section .card-content figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
   }
 }
 
@@ -601,16 +506,24 @@ p {
 
 .singlecontainer-section .card-content .card-text {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   padding-right: 1rem;
 }
 
 @media (min-width: 568px) {
   .singlecontainer-section .card-content .card-text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 60%;
-            flex: 0 0 60%;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+  }
+}
+
+@media (min-width: 750px) {
+  .singlecontainer-section .card-content .card-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 68%;
+            flex: 0 0 68%;
   }
 }
 
@@ -702,6 +615,111 @@ p {
 
 .singlecontainer-section .card-content .work-section .work-card .date span {
   margin-right: 1rem;
+}
+
+@media (min-width: 568px) {
+  .singlecontainer-section .form-div {
+    max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+}
+
+.singlecontainer-section .form-div h1 {
+  padding: 1rem;
+}
+
+@media (min-width: 568px) {
+  .singlecontainer-section .form-div h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.singlecontainer-section .form-div #contact-form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.singlecontainer-section .form-div #contact-form div {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 472px) {
+  .singlecontainer-section .form-div #contact-form div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.singlecontainer-section .form-div #contact-form div label {
+  background-color: #F9C74F;
+  border: 2px solid black;
+  border-bottom: none;
+  padding: .1rem .3rem;
+  text-align: center;
+}
+
+.singlecontainer-section .form-div #contact-form div input {
+  width: 100%;
+  padding: .5rem;
+  border: 2px solid black;
+  -webkit-appearance: none;
+}
+
+.singlecontainer-section .form-div #contact-form div input:focus {
+  outline-color: darkorange;
+}
+
+.singlecontainer-section .form-div #contact-form div textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid black;
+  padding: .4rem .2rem;
+  -webkit-appearance: none;
+}
+
+.singlecontainer-section .form-div #contact-form div textarea:focus {
+  outline-color: darkorange;
+}
+
+.singlecontainer-section .form-div #contact-form .send-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.singlecontainer-section .form-div #contact-form .send-btn input {
+  width: 100%;
+  padding: .7rem;
+  -webkit-appearance: none;
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: #76C893;
 }
 
 .singlecontainer-section .single-portfolio-card {

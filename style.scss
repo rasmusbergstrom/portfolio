@@ -56,8 +56,8 @@ p{
     justify-content: space-between;
     padding: 0rem;  
     @media (min-width: 568px) {
+        max-width: 750px;
         flex: 0 0 100%;
-        max-width: $max-width;
         padding: 1rem 6rem;
     }
     &.end{
@@ -298,131 +298,73 @@ p{
         margin: 1rem;
         padding: 1rem;
         max-width: 750px;
-        .form-div{       
-            @media (min-width: 568px) {
-                max-width: 400px;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                padding: 1rem; 
-            }
-            h1{
-                padding: 1rem;
-                @media (min-width: 568px) {
-                    display: flex;
-                    justify-content: start;
-                    flex-wrap: wrap;
-                    flex: 0 0 100%;
-                }
-            }
-            #contact-form{ 
-                flex: 0 0 100%;
-                padding: 1rem;  
-                display: flex;
-                flex-wrap: wrap;
-                div{          
-                    margin-bottom: 1rem;
-                    @media (min-width: 472px) {
-                        flex: 0 0 100%;
-                    }
-                    label{
-                        background-color: $main-color;
-                        border: $standard-shadow;
-                        border-bottom: none;
-                        padding: .1rem .3rem;
-                        text-align: center;
-                    }
-                    input{
-                        width: 100%;
-                        padding: .5rem;
-                        border: $standard-shadow;
-                        -webkit-appearance: none;
-                        &:focus{
-                            outline-color: $hover-color;
-                        }
-                    }
-                    textarea{
-                        width: 100%;
-                        resize: none;
-                        border: $standard-shadow;
-                        padding: .4rem .2rem;
-                        -webkit-appearance: none;
-                        &:focus{
-                            outline-color: $hover-color;
-                        }
-                    }
-                } 
-                .send-btn{
-                    flex: 0 0 100%;
-                    input{
-                        width: 100%;
-                        padding: .7rem;
-                        -webkit-appearance: none;
-                        border: $standard-shadow;
-                        font-weight: bold;
-                        background-color: $second-color;
-                    }
-                }        
-            }
-        }
+        //Page  
         p{
+            
             font-weight: 300;
         }
-            &.alternative-article{
-                h2{    
-                    margin-top: 1rem;  
-                    font-weight: 500;
-                }
-                figure{
-                    order: -1;               
-                    flex: 0 0 100%;
-                    height: 150px;
-                }
-                .card-text{
-                    flex: 0 0 100%;
-                }
-
-            }
-            h2{
-                flex: 0 0 100%;
+        &.alternative-article{
+            h2{    
+                margin-top: 1rem;  
+                font-weight: 500;
             }
             figure{
-                height: 300px;
-                flex: 0 0 40%;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                @media (min-width: 568px) {
-                    flex: 0 0 40%;
-                }
-                @media (min-width: 950px) {
-                    flex: 0 0 30%;
-                }
+                order: -1;               
+                flex: 0 0 100%;
+                height: 150px;
             }
             .card-text{
-                flex: 0 0 60%;
-                padding-right: 1rem;
-                @media (min-width: 568px) {
-                    flex: 0 0 60%;
-                }
-                @media (min-width: 950px) {
-                    flex: 0 0 70%;
-                }
-
-            }
-            .aboutme-button-bar{
                 flex: 0 0 100%;
-                margin-top: 1rem;
-                div{ 
-                    display: flex;
-                    justify-content: flex-end;
-                    a{
-                        text-decoration: none;
-                        color: $primary-text-color;
-                    }
-                    span{
-                        font-size: 27px;
-                    }
+            }
+
+        }
+        h2{
+            flex: 0 0 100%;
+        }
+        figure{
+            justify-self: start;
+            height: 300px;
+            flex: 0 0 50%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            @media (min-width: 568px) {
+                flex: 0 0 35%;
+            }
+            @media (min-width: 750px) {
+                flex: 0 0 32%;
+            }
+            @media (min-width: 950px) {
+                flex: 0 0 30%;
+            }
+        }
+        .card-text{
+            flex: 0 0 50%;
+            padding-right: 1rem;
+            @media (min-width: 568px) {
+                flex: 0 0 65%;
+            }
+            @media (min-width: 750px) {
+                flex: 0 0 68%;
+            }
+            @media (min-width: 950px) {
+                flex: 0 0 70%;
+            }
+
+        }
+        .aboutme-button-bar{
+            flex: 0 0 100%;
+            margin-top: 1rem;
+            div{ 
+                display: flex;
+                justify-content: flex-end;
+                a{
+                    text-decoration: none;
+                    color: $primary-text-color;
+                }
+                span{
+                    font-size: 27px;
                 }
             }
+        }
         .work-section{
             border-top: 1px solid black; 
             margin: 1rem .2rem;
@@ -452,6 +394,74 @@ p{
                     }
                 }
             }
+        }
+    }
+    //Contact-from
+    .form-div{   
+        @media (min-width: 568px) {
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem; 
+        }
+        h1{
+            padding: 1rem;
+            @media (min-width: 568px) {
+                display: flex;
+                justify-content: start;
+                flex-wrap: wrap;
+                flex: 0 0 100%;
+            }
+        }
+        #contact-form{ 
+            flex: 0 0 100%;
+            padding: 1rem;  
+            display: flex;
+            flex-wrap: wrap;
+            div{          
+                margin-bottom: 1rem;
+                @media (min-width: 472px) {
+                    flex: 0 0 100%;
+                }
+                label{
+                    background-color: $main-color;
+                    border: $standard-shadow;
+                    border-bottom: none;
+                    padding: .1rem .3rem;
+                    text-align: center;
+                }
+                input{
+                    width: 100%;
+                    padding: .5rem;
+                    border: $standard-shadow;
+                    -webkit-appearance: none;
+                    &:focus{
+                        outline-color: $hover-color;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    resize: none;
+                    border: $standard-shadow;
+                    padding: .4rem .2rem;
+                    -webkit-appearance: none;
+                    &:focus{
+                        outline-color: $hover-color;
+                    }
+                }
+            } 
+            .send-btn{
+                flex: 0 0 100%;
+                input{
+                    width: 100%;
+                    padding: .7rem;
+                    -webkit-appearance: none;
+                    border: $standard-shadow;
+                    font-weight: bold;
+                    background-color: $second-color;
+                }
+            }        
         }
     }
     .single-portfolio-card{
