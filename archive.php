@@ -10,7 +10,6 @@
 </section>
 <section class="container">
 <?php 
-    query_posts('cat=-14'); 
     if(have_posts()) : 
         while(have_posts()) : 
             the_post();  
