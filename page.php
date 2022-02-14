@@ -5,7 +5,7 @@ if(have_posts()) :
 ?>
 <section class="singlecontainer-section">
     <article class="card-content">
-        <h2><?php the_title(); ?> </h2>
+        <h1><?php the_title(); ?> </h1>
         <div class="card-text">
             <p><?php the_content(); ?></p>
         </div>
