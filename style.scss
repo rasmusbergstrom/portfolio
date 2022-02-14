@@ -334,7 +334,7 @@ p{
          display: flex;
          flex-wrap: wrap;
          margin-bottom: 2rem;
-        margin: .5rem;
+         margin: .5rem;
          @media (min-width: 568px) {
              flex: 0 0 46%;
          }
@@ -494,6 +494,7 @@ p{
             .single-content-text{
                 @media (min-width: 568px) {
                     flex: 0 0 60%;
+                    margin-right: .4rem;
                 }
                 h4{
                 margin-bottom: .3rem;
@@ -528,12 +529,21 @@ p{
                     flex: 0 0 35%;
                     flex-flow: column;
                 } 
-                figure{              
+                figure{     
+                    margin-bottom: .5rem; 
                     img{ 
-                    width: 100%;
+                        width: 100%;
                         height: 100%;
                         display: block;
                         border: solid 2px black;   
+                    }
+                    &:first-child{
+                        margin-right: .5rem;
+                    }
+                    @media (min-width: 568px) {
+                        &:first-child{
+                            margin-right: 0;
+                        }
                     }
                 }
             }
