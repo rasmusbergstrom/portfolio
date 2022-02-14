@@ -44,11 +44,19 @@
         </div> 
     </article>
 </div>
-<section class="btn-bar">
-    <?php previous_post_link('%link','<span class="material-icons">chevron_left</span>
-                    Föregående</a>', '14'); 
-        next_post_link('%link', 'Nästa<span class="material-icons">chevron_right</span></a>' , '14');?>
-</section>
+    <?php if(!get_previous_post_link() && get_next_post_link()) : ?>
+    <section class="btn-bar end">
+    <?php next_post_link('%link', 'Nästa<span class="material-icons">chevron_right</span></a>' , '14');
+          ?> </section>
+          <?php 
+    else : ?>
+    <section class="btn-bar "> 
+    <?php 
+    previous_post_link('%link','<span class="material-icons">chevron_left</span>Föregående</a>', '14');
+    next_post_link('%link', 'Nästa<span class="material-icons">chevron_right</span></a>' , '14');
+    ?> </section>
+    <?php
+    endif ?>
 <?php 
         endwhile;
     else : ?>
