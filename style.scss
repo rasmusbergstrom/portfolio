@@ -56,11 +56,11 @@ p{
     justify-content: space-between;
     padding: 0rem;  
     @media (min-width: 568px) {
-        max-width: 750px;
         flex: 0 0 100%;
         padding: 1rem 6rem;
     }
     &.end{
+        max-width: 780px;
         justify-content: flex-end;
         padding: 1rem 1.2rem;
         //För att få flex att fungera på bland annat safari: 
@@ -298,11 +298,10 @@ p{
         margin: 1rem;
         padding: 1rem;
         max-width: 750px;
-        //Page  
         p{
-            
             font-weight: 300;
         }
+        //Page  
         &.alternative-article{
             h2{    
                 margin-top: 1rem;  
@@ -338,7 +337,10 @@ p{
         }
         .card-text{
             flex: 0 0 50%;
-            padding-right: 1rem;
+            padding-right: 1rem;  
+            p{
+                font-weight: 300;
+            }    
             @media (min-width: 568px) {
                 flex: 0 0 65%;
             }

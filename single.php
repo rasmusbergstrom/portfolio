@@ -14,7 +14,7 @@
     <article class="single-portfolio-content">
         <div class="single-content-text">
             <h4><?php the_title(); ?></h4>
-        <p><?php the_excerpt(); ?></p>
+        <p><?php the_content(); ?></p>
         </div>                  
         <div class="single-portfolio-img-container">
             <?php 

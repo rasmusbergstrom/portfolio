@@ -58,7 +58,6 @@ p {
 
 @media (min-width: 568px) {
   .btn-bar {
-    max-width: 750px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -67,6 +66,7 @@ p {
 }
 
 .btn-bar.end {
+  max-width: 780px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -509,6 +509,10 @@ p {
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   padding-right: 1rem;
+}
+
+.singlecontainer-section .card-content .card-text p {
+  font-weight: 300;
 }
 
 @media (min-width: 568px) {
