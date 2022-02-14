@@ -319,12 +319,14 @@ p{
             flex: 0 0 100%;
         }
         figure{
+            margin-top: 1rem;
             justify-self: flex-start;
             height: 300px;
             flex: 0 0 50%;
             box-shadow: $img-shadow;
             @media (min-width: 568px) {
                 flex: 0 0 35%;
+                margin-top: 0rem;
             }
             @media (min-width: 750px) {
                 flex: 0 0 32%;
@@ -334,13 +336,13 @@ p{
             }
         }
         .card-text{
-            flex: 0 0 50%;
-            padding-right: 1rem;  
+            flex: 0 0 100%;  
             p{
                 font-weight: 300;
             }    
             @media (min-width: 568px) {
                 flex: 0 0 65%;
+                padding-right: 1rem;
             }
             @media (min-width: 750px) {
                 flex: 0 0 68%;

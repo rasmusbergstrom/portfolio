@@ -470,6 +470,7 @@ p {
 }
 
 .singlecontainer-section .card-content figure {
+  margin-top: 1rem;
   justify-self: flex-start;
   height: 300px;
   -webkit-box-flex: 0;
@@ -484,6 +485,7 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 35%;
             flex: 0 0 35%;
+    margin-top: 0rem;
   }
 }
 
@@ -505,9 +507,8 @@ p {
 
 .singlecontainer-section .card-content .card-text {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  padding-right: 1rem;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 .singlecontainer-section .card-content .card-text p {
@@ -519,6 +520,7 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 65%;
             flex: 0 0 65%;
+    padding-right: 1rem;
   }
 }
 
