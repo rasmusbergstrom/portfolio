@@ -806,6 +806,10 @@ p {
   font-weight: 500;
 }
 
+.singlecontainer-section .single-portfolio-card .single-portfolio-content .single-content-text h5 {
+  margin-top: .5rem;
+}
+
 .singlecontainer-section .single-portfolio-card .single-portfolio-content .single-content-text p {
   font-weight: 400;
 }
@@ -841,6 +845,8 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 568px) {
@@ -852,6 +858,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
