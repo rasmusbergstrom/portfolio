@@ -17,3 +17,15 @@ function theme_setup() {
     ));
 }
 add_action('after_setup_theme', 'theme_setup');
+
+function add_class_for_previous_post($html){
+    $html = str_replace('<a', '<a class="btn"', $html);
+    return $html;
+}
+add_filter('previous_post_link', 'add_class_for_previous_post');
+
+function add_class_for_next_post($html){
+    $html = str_replace('<a', '<a class="btn"', $html);
+    return $html;
+}
+add_filter('next_post_link', 'add_class_for_next_post');

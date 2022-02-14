@@ -69,8 +69,10 @@ p {
 .btn-bar.end {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   padding: 1rem 1.2rem;
+  -ms-flex-pack: flex-end;
+  -webkit-justify-content: flex-end;
 }
 
 .btn-bar.single {
@@ -374,7 +376,7 @@ p {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .about-me-section .card-content .aboutme-button-bar div a {
@@ -441,26 +443,6 @@ p {
 
 .about-me-section .card-content .work-section .work-card .date span {
   margin-right: 1rem;
-}
-
-.about-me-section .button-section {
-  margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.about-me-section .button-section .back-button {
-  background-color: #F9C74F;
-  border: 2px solid black;
-  padding: .2rem .5rem;
-}
-
-.about-me-section .button-section :hover {
-  background-color: darkorange;
 }
 
 .container {
@@ -544,8 +526,8 @@ p {
 @media (min-width: 780px) {
   .container .portfolio-div {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 31%;
-            flex: 0 0 31%;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
   }
 }
 
@@ -599,7 +581,7 @@ p {
 
 .container .portfolio-div .portfolio-content .categorys {
   position: absolute;
-  bottom: 10px;
+  bottom: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +851,7 @@ p {
 .home-header {
   background-color: #76C893;
   padding: 1rem 0;
-  border-bottom: solid 3px black;
+  border-bottom: 2px solid black;
   position: fixed;
   z-index: 20;
   left: 0;
@@ -1006,12 +988,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 @media (min-width: 768px) {
@@ -1028,10 +1004,7 @@ p {
 
 .home-header .head-content .header-mob-menu ul li {
   padding-bottom: 1rem;
-  border-bottom: solid 2px black;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  border-bottom: 2px solid black;
   padding: 1rem 1.5rem;
   text-align: center;
 }
@@ -1049,7 +1022,7 @@ p {
 }
 
 .home-header .head-content .header-mob-menu ul li:first-child {
-  border-top: solid 2px black;
+  border-top: 2px solid black;
 }
 
 @media (min-width: 768px) {

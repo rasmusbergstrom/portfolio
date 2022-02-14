@@ -60,8 +60,10 @@ p{
         padding: 1rem 6rem;
     }
     &.end{
-        justify-content: end;
+        justify-content: flex-end;
         padding: 1rem 1.2rem;
+        -ms-flex-pack: flex-end;
+        -webkit-justify-content: flex-end;
     }
     &.single{
     justify-content: center; 
@@ -247,7 +249,7 @@ p{
                 margin-top: 1rem;
                 div{ 
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
                     a{
                         text-decoration: none;
                         color: $primary-text-color;
@@ -288,19 +290,6 @@ p{
             }
         }
     }
-    .button-section{
-       margin-top: 1rem;
-       display: flex;
-       justify-content: end;
-       .back-button{
-           background-color: $main-color;
-           border: $standard-shadow;
-           padding: .2rem .5rem;
-       }
-       :hover{
-           background-color: $hover-color;
-       }
-   }
 }
 
 .container{ 
@@ -350,7 +339,7 @@ p{
              flex: 0 0 46%;
          }
          @media (min-width: 780px) {
-             flex: 0 0 31%;
+             flex: 0 0 33%;
          }
          @media (min-width: 960px) {
              flex: 0 0 31%;
@@ -384,7 +373,7 @@ p{
             }
             .categorys{ 
                 position: absolute;
-                bottom: 10px;
+                bottom: 1px;
                 display: flex;
                 justify-content: center;
                 li{           
@@ -557,7 +546,7 @@ p{
 .home-header{
     background-color: $second-color;
     padding: 1rem 0;
-    border-bottom: solid 3px black;
+    border-bottom: $standard-shadow;
     position: fixed;
     z-index: 20;
     left: 0;
@@ -647,17 +636,13 @@ p{
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                
-                justify-content: space-between;
-                flex: 1;
                 @media (min-width: 768px) {
                     flex-direction: row;
                     align-items: center;
                 }
                 li{
                     padding-bottom: 1rem;
-                    border-bottom: solid 2px black;
-                    flex: 0 0 100%;
+                    border-bottom: $standard-shadow;
                     padding: 1rem 1.5rem;
                     text-align: center;
                     @media (min-width: 768px) {
@@ -666,7 +651,7 @@ p{
                         justify-content: space-between;
                     }
                     &:first-child{
-                        border-top: solid 2px black;
+                        border-top: $standard-shadow;
                         @media (min-width: 768px) {
                             border-top: none;
                         }

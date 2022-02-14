@@ -7,3 +7,4 @@ navToggle.addEventListener('click', function() {
     navToggle.classList.toggle("exit");
     mainNav.classList.toggle("active");
 });
+

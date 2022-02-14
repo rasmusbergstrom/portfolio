@@ -44,22 +44,17 @@
         </div> 
     </article>
 </div>
+<section class="btn-bar">
+    <?php previous_post_link('%link','<span class="material-icons">chevron_left</span>
+                    Föregående</a>', '14'); 
+        next_post_link('%link', 'Nästa<span class="material-icons">chevron_right</span></a>' , '14');?>
+</section>
 <?php 
         endwhile;
     else : ?>
         <p><?php esc_html_e('Det finns inget innehåll')?></p>
 <?php endif;
 ?>
-<section class="btn-bar">
-    <a class="btn" href="">
-    <span class="material-icons">chevron_left</span>
-        Föregående
-    </a>
-    <a class="btn" href="">
-        
-    <span class="material-icons">chevron_right</span>
-    </a>
-</section>
 <?php get_footer(); ?>
 </body>
 </html>
