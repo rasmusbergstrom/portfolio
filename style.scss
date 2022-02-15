@@ -5,6 +5,8 @@
     Version: 1.0
     Tag: portfolio
 */
+
+//Variabler
 $main-color: #F9C74F;
 $second-color: #76C893;
 $background-color: #DEE2E6;
@@ -12,10 +14,10 @@ $primary-text-color: black;
 $seconday-content-color: #FFFFFF;
 $border-color: black;
 $hover-color: darkorange;
-$standard-shadow: 2px solid $border-color;
-$bottom-shadow: 5px solid $border-color;
-$img-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
-$max-width: 1200px;
+$standard-shadow: 2px solid $border-color;  // Skugga för att få en mörk-kant runt mina element
+$bottom-shadow: 5px solid $border-color;    //Skugga för att få en bredare kant i botten på mina element
+$img-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;; //Skugga jag använder på mina bilder, för att det ser lite trevligare ut.
+$max-width: 1200px; 
 $font: 'Poppins';
 $fontWeight500: 500;
 $fontWeight400: 400;
@@ -80,10 +82,12 @@ p{
             padding: 1rem 12rem;
         }
     }
+    //När det enbart finns en knapp i min bar använder jag denna klass för att centrerar 
     &.single{
     justify-content: center; 
     } 
 }
+//Standard style för mina knappar
 .btn{
     background-color: $second-color;
     text-align: center;
@@ -99,6 +103,7 @@ p{
         font-weight: 600;
     }
 }
+//Style för mina knappar som enbart ska vara en text
 .text-button{          
     padding: .3rem 0;
     display: flex;
@@ -109,7 +114,7 @@ p{
         justify-content: end;   //För att lägga min text-knapp i slutet av containern så har jag denna klass
     }
 }
-//Banner-sektion
+//Banner-sektion, sektion som jag tänkt även ska funka om jag väljer att lägga till Hero-bild också. 
 .banner{
     max-width: $max-width;
     margin: auto;

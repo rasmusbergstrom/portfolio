@@ -21,14 +21,19 @@
                 $img1 = get_field('bild_1');
                 $img2 = get_field('bild_2');
             ?>
-            <?php if($img1 && $img2) : ?>
+            
+            <?php 
+            #Ifall img1 OCH img2 finns hämta båda bilderna: 
+            if($img1 && $img2) : ?>
                 <figure>
                     <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
                 </figure>
                 <figure>
                     <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
                 </figure>  
-            <?php elseif($img1 && empty($img2['url'])) : ?>
+            <?php 
+            #Ifall img1 OCH img2 INTE finns hämta bara bild 1: 
+            elseif($img1 && empty($img2['url'])) : ?>
                 <figure>
                     <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
                 </figure>         
@@ -47,7 +52,9 @@
         </div> 
     </article>
 </div>
-    <?php if(!get_previous_post_link() && get_next_post_link()) : ?>
+    <?php 
+    # Kollar ifall inlägget som visas är det första, isåfall placeras Nästaknappen till höger(i slutet av min BTN bar)
+    if(!get_previous_post_link() && get_next_post_link()) : ?>
     <section class="btn-bar end">
     <?php next_post_link('%link', 'Nästa<span class="material-icons">chevron_right</span></a>' , '14');
           ?> </section>

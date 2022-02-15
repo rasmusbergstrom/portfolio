@@ -1,4 +1,5 @@
 <?php
+//Min style funktion, här deklarerar jag font, style-fil, icons samt även min JS-script fil
 function get_style_script(){
     wp_enqueue_style('main-style', get_stylesheet_uri());
     wp_enqueue_style('main_font', 'https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
@@ -6,8 +7,9 @@ function get_style_script(){
 
     wp_enqueue_script('main-js', get_theme_file_uri('script.js'), NULL, false, true);
 }
+//Kallar på funktionen get_style_script
 add_action('wp_enqueue_scripts', 'get_style_script');
-
+//Deklarera support för mitt WP-tema. Skapar support för title-tag, att mina inlägg har möjighet att ha utvalda bilder samt mina menyer.
 function theme_setup() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -16,6 +18,7 @@ function theme_setup() {
         'categorymenu' => 'Category Menu'
     ));
 }
+//Kallar på min setup-function
 add_action('after_setup_theme', 'theme_setup');
 //Lägga till egen klass på a tag för styling
 function add_class_for_previous_post($html){
