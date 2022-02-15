@@ -21,13 +21,16 @@
                 $img1 = get_field('bild_1');
                 $img2 = get_field('bild_2');
             ?>
-            <?php if($img1) : ?>
+            <?php if($img1 && $img2) : ?>
                 <figure>
                     <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
                 </figure>
-                <?php if(!empty($img2['url']));?>
                 <figure>
                     <img src="<?php echo $img2['url'];?>" alt="<?php echo $img2['alt'];?>">
+                </figure>  
+            <?php elseif($img1 && empty($img2['url'])) : ?>
+                <figure>
+                    <img src="<?php echo $img1['url'];?>" alt="<?php echo $img1['alt'];?>">
                 </figure>         
             <?php endif; ?>
         </div>
@@ -50,7 +53,7 @@
           ?> </section>
           <?php 
     else : ?>
-    <section class="btn-bar "> 
+    <section class="btn-bar"> 
     <?php 
     previous_post_link('%link','<span class="material-icons">chevron_left</span>Föregående</a>', '14');
     next_post_link('%link', 'Nästa<span class="material-icons">chevron_right</span></a>' , '14');
