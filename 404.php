@@ -4,9 +4,9 @@
  */
 get_header(); 
 $id = 177; //404-page ID
-$title = get_field('title_404', $id);
-$textcontent = get_field('textfield_404', $id);
-$link = get_field('link_404', $id);
+$title = get_field('title_404', $id);   //Hämtar title från min 404-sida med hjälp av variabeln jag skapat för ID
+$textcontent = get_field('textfield_404', $id); //Hämtar innehåll från min 404-sida med hjälp av variabeln jag skapat för ID
+$link = get_field('link_404', $id); //Hämtar länk till annan sida från min 404-sida med hjälp av variabeln jag skapat för ID
 ?>
     <section class="container">
         <div class ="error-div">
