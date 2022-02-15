@@ -61,12 +61,24 @@ p{
         padding: 1rem 6rem;
     }
     &.end{
-        max-width: 780px;
+        margin: auto;
         justify-content: flex-end;
-        padding: 1rem 1.2rem;
+        padding: 1rem 1rem;
         //För att få flex-end att fungera på bland annat safari: 
         -ms-flex-pack: flex-end;  
         -webkit-justify-content: flex-end;
+        @media (min-width: 568px) {
+            padding: 1rem 2rem;
+        }
+        @media (min-width:  750px) {
+            padding: 1rem 4.5rem;
+        }
+        @media (min-width: 1090px) {
+            padding: 1rem 9rem;
+        }
+        @media (min-width: $max-width) {
+            padding: 1rem 12rem;
+        }
     }
     &.single{
     justify-content: center; 
@@ -315,14 +327,14 @@ p{
             }
 
         }
-        h2{
+        h1{
             flex: 0 0 100%;
         }
         figure{
             margin-top: 1rem;
             justify-self: flex-start;
             height: 300px;
-            flex: 0 0 50%;
+            flex: 0 0 60%;
             box-shadow: $img-shadow;
             @media (min-width: 568px) {
                 flex: 0 0 35%;
@@ -496,7 +508,7 @@ p{
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                flex: 0 0 80%;
+                flex: 0 0 60%;
                 min-height: 60vh;
             }
             .single-content-text{
@@ -505,9 +517,12 @@ p{
                     margin-right: .4rem;
                 }
                 h4{
-                margin-bottom: .3rem;
+                    margin-bottom: .3rem;
                     font-size: 1.2rem;
                     font-weight: $fontWeight500;
+                }
+                h5{
+                    margin-top: .5rem;
                 }
                 p{
                     font-weight: $fontWeight400;
@@ -532,10 +547,12 @@ p{
             .single-portfolio-img-container{
                 margin-top: 1rem;
                 display: flex;
-                justify-content: space-between;  
+                justify-content: space-between; 
+                flex-wrap: wrap; 
                 @media (min-width: 568px) {
                     flex: 0 0 35%;
                     flex-flow: column;
+                    justify-content: start; 
                 } 
                 figure{     
                     margin-bottom: .5rem; 

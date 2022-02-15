@@ -66,13 +66,37 @@ p {
 }
 
 .btn-bar.end {
-  max-width: 780px;
+  margin: auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1rem;
   -ms-flex-pack: flex-end;
   -webkit-justify-content: flex-end;
+}
+
+@media (min-width: 568px) {
+  .btn-bar.end {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .btn-bar.end {
+    padding: 1rem 4.5rem;
+  }
+}
+
+@media (min-width: 1090px) {
+  .btn-bar.end {
+    padding: 1rem 9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-bar.end {
+    padding: 1rem 12rem;
+  }
 }
 
 .btn-bar.single {
@@ -463,7 +487,7 @@ p {
           flex: 0 0 100%;
 }
 
-.singlecontainer-section .card-content h2 {
+.singlecontainer-section .card-content h1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -474,8 +498,8 @@ p {
   justify-self: flex-start;
   height: 300px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -785,8 +809,8 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 80%;
-            flex: 0 0 80%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
     min-height: 60vh;
   }
 }
@@ -804,6 +828,10 @@ p {
   margin-bottom: .3rem;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.singlecontainer-section .single-portfolio-card .single-portfolio-content .single-content-text h5 {
+  margin-top: .5rem;
 }
 
 .singlecontainer-section .single-portfolio-card .single-portfolio-content .single-content-text p {
@@ -841,6 +869,8 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 568px) {
@@ -852,6 +882,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
